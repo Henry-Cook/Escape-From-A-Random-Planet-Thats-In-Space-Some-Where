@@ -100,7 +100,9 @@ Bowlby - <code>@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+
 
 #### Component Tree
 
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. 
+<p align="center">
+<img src="https://github.com/Henry-Cook/Escape-The-Global-Object/blob/master/readme-assets/Screen%20Shot%202020-09-13%20at%206.18.44%20PM.png?raw=true"/>
+</p>
 
 #### Component Hierarchy
 
