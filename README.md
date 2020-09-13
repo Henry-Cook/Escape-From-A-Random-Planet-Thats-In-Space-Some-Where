@@ -26,7 +26,7 @@
   
 You have crash landed on an alien planet! You have managed to fix the ship and lift off, but the crash has caused the software to malfunction! Type in the embedded code editor and solve javaScript based questions to gain altitude and escape the global object!!
 
-The front end of ETGO is built in React using functional components. The back end is a RESTful api built with Ruby on Rails. There are two main parts of the game, the embedded code editor, and the visualization of the spaceship flying through the planets atmosphere. Players have a limited amount of time to answer questions, and if they miss **just one** their ship blows up! No second chances here! The answers they input are tested with Jest, and the total time of their run is recorded. The recorded time of user's runs is the metric that is used to populate the leaderboard.  
+The front end of ETGO is built in React using functional components. The back end is a RESTful api built with Ruby on Rails and using PostgreSQL for the database. There are two main parts of the game, the embedded code editor, and the visualization of the spaceship flying through the planets atmosphere. Players have a limited amount of time to answer questions, and if they miss **just one** their ship blows up! No second chances here! The answers they input are tested with Jest, and the total time of their run is recorded. The recorded time of user's runs is the metric that is used to populate the leaderboard.  
 
 <br>
 
