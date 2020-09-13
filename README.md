@@ -1,5 +1,9 @@
-# Escape The Global Object!
+<p align="center">
+<img src="https://github.com/Henry-Cook/Escape-The-Global-Object/blob/master/readme-assets/Screen%20Shot%202020-09-13%20at%203.46.23%20PM.png?raw=true" />
+</p>
 
+<hr>
+	
 - [Overview](#overview)
 - [MVP](#mvp)
   - [Goals](#goals)
