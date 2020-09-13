@@ -96,7 +96,7 @@ Bowlby - <code>@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+
 
 ![Text](https://github.com/Henry-Cook/Escape-The-Global-Object/blob/master/readme-assets/Screen%20Shot%202020-09-13%20at%203.51.38%20PM.png?raw=true)
 
-
+<hr>
 
 #### Component Tree
 
