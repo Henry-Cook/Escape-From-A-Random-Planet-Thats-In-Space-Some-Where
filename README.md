@@ -67,11 +67,7 @@ The front end of ETGO is built in React using functional components. The back en
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
-
-![Dummy Link](url)
-
-- Desktop Landing
+![Desktop Landing](https://github.com/Henry-Cook/Escape-The-Global-Object/blob/master/readme-assets/wire-frames/Screen%20Shot%202020-09-13%20at%202.24.48%20PM.png?raw=true)
 
 ![Dummy Link](url)
 
