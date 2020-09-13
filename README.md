@@ -44,7 +44,7 @@ The front end of ETGO is built in React using functional components. The back en
 
 <br>
 
-### Goals
+## Goals
 
 * Deploy a full-stack Ruby on Rails project with a React front end.
 * Learn how to test software, in this case with Jest. 
@@ -53,7 +53,7 @@ The front end of ETGO is built in React using functional components. The back en
 
 <br>
 
-### Libraries and Dependencies
+## Libraries and Dependencies
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
@@ -66,7 +66,7 @@ The front end of ETGO is built in React using functional components. The back en
 
 <br>
 
-#### Wireframes and Design
+## Wireframes and Design
 
 <p align="center">Desktop Landing</p>
 
@@ -86,25 +86,27 @@ The front end of ETGO is built in React using functional components. The back en
 
 <p align="center">Font Choices</p>
 
-##### Title: 
+### Title: 
 Bowlby - <code>@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');</code>
 
 ![Title](https://github.com/Henry-Cook/Escape-The-Global-Object/blob/master/readme-assets/Screen%20Shot%202020-09-13%20at%203.46.23%20PM.png?raw=true)
 
- ##### Text: 
+ ### Text: 
  Roboto - <code>@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');</code> 
 
 ![Text](https://github.com/Henry-Cook/Escape-The-Global-Object/blob/master/readme-assets/Screen%20Shot%202020-09-13%20at%203.51.38%20PM.png?raw=true)
 
 <br>
-#### Component Tree
+
+## Component Tree
 
 <p align="center">
 <img src="https://github.com/Henry-Cook/Escape-The-Global-Object/blob/master/readme-assets/Screen%20Shot%202020-09-13%20at%206.18.44%20PM.png?raw=true"/>
 </p>
 
 <br>
-#### Component Hierarchy
+
+## Component Hierarchy
 
 ``` structure
 
@@ -129,7 +131,8 @@ src
 
 ```
 <br>
-#### Component Breakdown
+
+## Component Breakdown
 
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
@@ -142,7 +145,8 @@ src
 |    HighScore    | functional |   Y   |   Y   | _Will users the global high scores from all players._ |
 
 <br>
-#### Time Estimates
+
+## Time Estimates
 
 > Use this section to estimate the time necessary to build out each of the components you've described above.
 
@@ -156,16 +160,13 @@ src
 
 <br>
 
-
-#### ERD Model
+## ERD Model
 
 <p align="center">
 <img src="https://github.com/Henry-Cook/Escape-The-Global-Object/blob/master/readme-assets/Screen%20Shot%202020-09-13%20at%201.47.40%20PM.png?raw=true" />
 <p>
 
 <br>
-
-***
 
 ## Post-MVP
 
@@ -177,10 +178,12 @@ src
 * Mobile view switches to multiple choice questions. 
 
 <br>
+
 ## Code Showcase
 
 > TBD
 <br>
+
 ## Code Issues & Resolutions
 
 > TBD
