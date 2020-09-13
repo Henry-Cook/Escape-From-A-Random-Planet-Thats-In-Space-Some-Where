@@ -72,9 +72,9 @@ The front end of ETGO is built in React using functional components. The back en
 
 ![Desktop Landing](https://github.com/Henry-Cook/Escape-The-Global-Object/blob/master/readme-assets/wire-frames/Screen%20Shot%202020-09-13%20at%202.24.48%20PM.png?raw=true)
 
-![Dummy Link](url)
+<p align="center">Desk Top Game Play Screen</p>
 
-- Desktop Hero
+![Desktop Game Play Screen](https://github.com/Henry-Cook/Escape-The-Global-Object/blob/master/readme-assets/wire-frames/Screen%20Shot%202020-09-13%20at%202.58.21%20PM.png?raw=true)
 
 ![Dummy Link](url)
 
@@ -164,8 +164,8 @@ src
 
 ## Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+> TBD
 
 ## Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution.
+> TBD
