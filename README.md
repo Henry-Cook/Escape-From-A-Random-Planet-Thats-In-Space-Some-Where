@@ -24,7 +24,7 @@
 
 ## Overview
   
-You have crash landed on an alien planet! You have managed to fix the ship and lift off, but the crash has caused the software to malfunction! Type in the embedded code editor and solve javaScript based questions to gain altitude and escape the global object!!
+You have crash landed on an alien planet! You have managed to fix the ship and lift off, but the crash has caused the software to malfunction! Type in the embedded code editor and solve JavaScript based questions to gain altitude and escape the global object!!
 
 The front end of ETGO is built in React using functional components. The back end is a RESTful api built with Ruby on Rails and using PostgreSQL for the database. There are two main parts of the game, the embedded code editor, and the visualization of the spaceship flying through the planets atmosphere. Players have a limited amount of time to answer questions, and if they miss **just one** their ship blows up! No second chances here! The answers they input are tested with Jest, and the total time of their run is recorded. The recorded time of user's runs is the metric that is used to populate the leaderboard.  
 
@@ -47,9 +47,9 @@ The front end of ETGO is built in React using functional components. The back en
 ## Goals
 
 * Deploy a full-stack Ruby on Rails project with a React front end.
-* Learn how to test software, in this case with Jest. 
+* Use Jest to test users answers.
 * Create a fun animated visual with pure HTML/CSS.
-* Show ability to integrate user authentication. 
+* Integrate user authentication. 
 
 <br>
 
@@ -57,9 +57,9 @@ The front end of ETGO is built in React using functional components. The back en
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | A javascript library used to build the front end of this project |
-|   React Bootstrap   | I know, I know Bootstap...They just make it so easy! Used mostly for their responsive Navbar and inputs |
-|   React Router   | A package that simulates a routing on the front end |
+|      React       | A JavaScript library used to build the front end of this project |
+|   React Bootstrap   | I know, I know Bootstap...They just make it so easy! Used mostly for navbar, inputs, and submit button |
+|   React Router   | A package that simulates page routing on the front end |
 | Axios | Quick and easy API calls to the backend |
 |    Ruby on Rails      | A web development frame work built on top of the ruby programming language |
 |  Active Record  | An easy to use ORM(Object Relational Mapping) that enables connection to the PostgreSQL database  |
