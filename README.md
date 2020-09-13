@@ -84,6 +84,19 @@ The front end of ETGO is built in React using functional components. The back en
 
 ![Color Palette](https://github.com/Henry-Cook/Escape-The-Global-Object/blob/master/readme-assets/Escape%20The%20Global%20Object%20Alternative.png?raw=true)
 
+<p align="center">Font Choices</p>
+
+##### Title: 
+Bowlby - <code>@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');</code>
+
+![Title](https://github.com/Henry-Cook/Escape-The-Global-Object/blob/master/readme-assets/Screen%20Shot%202020-09-13%20at%203.46.23%20PM.png?raw=true)
+
+ ##### Text: 
+ Roboto - <code>@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');</code> 
+
+![Text](https://github.com/Henry-Cook/Escape-The-Global-Object/blob/master/readme-assets/Screen%20Shot%202020-09-13%20at%203.51.38%20PM.png?raw=true)
+
+
 
 #### Component Tree
 
