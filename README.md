@@ -24,9 +24,9 @@
 
 ## Overview
   
-You crash landed on an alien planet! You have managed to fix the ship and lift off, but the crash has caused the software to malfunction! Type in the embedded code editor and solve javaScript based questions to gain altitude and escape the global object!!
+You have crash landed on an alien planet! You have managed to fix the ship and lift off, but the crash has caused the software to malfunction! Type in the embedded code editor and solve javaScript based questions to gain altitude and escape the global object!!
 
-The front end of ETGO is built in React using functional components. The back end is RESTful api built with Ruby on Rails. There are two main parts of the game, the embedded code editor, and the visualization of the spaceship flying through the planets atmosphere. Players have a limited amount of time to answer questions, and if they miss **just one** their ship blows up! No second chances here! The answers they input are tested with Jest, and the total time of their run is recordered. The recorded times of user's runs are the metric that is used to populate the leaderboard.  
+The front end of ETGO is built in React using functional components. The back end is a RESTful api built with Ruby on Rails. There are two main parts of the game, the embedded code editor, and the visualization of the spaceship flying through the planets atmosphere. Players have a limited amount of time to answer questions, and if they miss **just one** their ship blows up! No second chances here! The answers they input are tested with Jest, and the total time of their run is recorded. The recorded time of user's runs is the metric that is used to populate the leaderboard.  
 
 <br>
 
@@ -55,19 +55,15 @@ The front end of ETGO is built in React using functional components. The back en
 
 ### Libraries and Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
-
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+|      React       | A javascript library used to build the front end of this project |
+|   React Router   | A package that simulates a routing on the front end |
+| Axios | Quick and easy API calls to the backend |
+|    Ruby on Rails      | A web development frame work built on top of the ruby programming language |
+|  Active Record  | An easy to use ORM(Object Relational Mapping) that enables connection to the PostgreSQL database  |
 
 <br>
-
-### Client (Front End)
 
 #### Wireframes and Design
 <hr>
@@ -150,7 +146,6 @@ src
 
 <br>
 
-### Server (Back End)
 
 #### ERD Model
 
