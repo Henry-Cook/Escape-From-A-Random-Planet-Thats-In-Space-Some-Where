@@ -146,7 +146,9 @@ src
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
+<p align="center">
+<img src="https://github.com/Henry-Cook/Escape-The-Global-Object/blob/master/readme-assets/Screen%20Shot%202020-09-13%20at%201.47.40%20PM.png?raw=true" />
+<p>
 
 <br>
 
