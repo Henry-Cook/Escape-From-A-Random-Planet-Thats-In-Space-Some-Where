@@ -141,22 +141,31 @@ src
 |  Login  | functional |   Y   |   N   | _Will collect user input and send via services to backend for login verification._       |
 |   Signup    |   functional   |   Y   |   N   | _Will collect user input and send via services to create a new user profile._      |
 | QuestionBoxEditor | functional |   Y   |   Y   | _Contains the questions and code editor - Exact logic of game is TBD._  |
+| AnimationContainer | functional |   Y   |   Y   | _Will render a rocket ship lifting off from the ground and sky changing based on answers._  |
 |    PlayerScore    | functional |   Y   |   Y   | _Will show users their previous recorded scores._ |
-|    HighScore    | functional |   Y   |   Y   | _Will users the global high scores from all players._ |
+|    HighScore    | functional |   Y   |   Y   | _Will show users the global high scores from all players._ |
 
 <br>
 
 ## Time Estimates
 
-> Use this section to estimate the time necessary to build out each of the components you've described above.
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| Create Models, Controllers, Routes |    H     |     1 hrs      |     TBD     |     TBD     |
+| Build out CRUD methods in Controllers |    H     |     2 hrs      |     TBD     |     TBD     |
+| Add user authentication |    M     |     3 hrs      |     TBD    |     TBD     |
+| Build Layout |    L     |     .5 hrs      |     TBD     |     TBD     |
+| Login/Signup |    M     |     2 hrs      |     TBD     |     TBD     |
+| QuestionBoxEditor |    H     |     5 hrs      |     TBD     |     TBD     |
+| Jest Testing Implementation & Game Logic |    H     |     5 hrs      |     TBD     |     TBD     |
+| AnimationContainer |    H     |     5 hrs      |     TBD     |     TBD     |
+| PlayerScore |    L     |     1 hrs      |     TBD     |     TBD     |
+| HighScore |    L     |     1 hrs      |     TBD     |     TBD     |
+| Styling |    L     |     5 hrs      |     TBD     |     TBD     |
+| TOTAL               |          |     30 hrs      |     TBD     |     TBD     |
 
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
+
 
 <br>
 
