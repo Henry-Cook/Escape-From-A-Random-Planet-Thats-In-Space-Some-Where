@@ -163,7 +163,7 @@ src
 | PlayerScore |    L     |     1 hrs      |     TBD     |     TBD     |
 | HighScore |    L     |     1 hrs      |     TBD     |     TBD     |
 | Styling |    L     |     5 hrs      |     TBD     |     TBD     |
-| TOTAL               |          |     30 hrs      |     TBD     |     TBD     |
+| TOTAL               |          |     30.5 hrs      |     TBD     |     TBD     |
 
 
 
