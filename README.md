@@ -42,12 +42,11 @@ The front end of ETGO is built in React using functional components. The back en
 
 ### Goals
 
-* Difficulty level selection
-* 50 total questions
-* Avatar Creation
-* Music 
-* Settings page - toggle music, delete account, change name. 
-* Mobile view switches to multiple choice questions. 
+* Deploy a full-stack Ruby on Rails project with a React front end.
+* Learn how to test software, in this case with Jest. 
+* Create a fun animated visual with pure HTML/CSS.
+* Show ability to integrate user authentication. 
+
 <br>
 
 ### Libraries and Dependencies
@@ -156,9 +155,13 @@ src
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+* Difficulty level selection
+* 50 total questions
+* Avatar Creation
+* Music 
+* Settings page - toggle music, delete account, change name. 
+* Mobile view switches to multiple choice questions. 
 
-***
 
 ## Code Showcase
 
