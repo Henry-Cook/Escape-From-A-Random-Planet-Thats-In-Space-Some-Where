@@ -58,6 +58,7 @@ The front end of ETGO is built in React using functional components. The back en
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
 |      React       | A javascript library used to build the front end of this project |
+|   React Bootstrap   | I know, I know Bootstap...They just make it so easy! Used mostly for their responsive Navbar and inputs |
 |   React Router   | A package that simulates a routing on the front end |
 | Axios | Quick and easy API calls to the backend |
 |    Ruby on Rails      | A web development frame work built on top of the ruby programming language |
