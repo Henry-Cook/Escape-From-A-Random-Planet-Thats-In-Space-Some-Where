@@ -65,7 +65,7 @@ The front end of ETGO is built in React using functional components. The back en
 
 ### Client (Front End)
 
-#### Wireframes
+#### Wireframes and Design
 <hr>
 
 <p align="center">Desktop Landing</p>
@@ -80,19 +80,10 @@ The front end of ETGO is built in React using functional components. The back en
 
 ![Desktop High Scores](https://github.com/Henry-Cook/Escape-The-Global-Object/blob/master/readme-assets/wire-frames/Screen%20Shot%202020-09-13%20at%203.26.32%20PM.png?raw=true)
 
-- Resource Index
+<p align="center">Color Palette</p>
 
-![Dummy Link](url)
+![Color Palette](https://github.com/Henry-Cook/Escape-The-Global-Object/blob/master/readme-assets/Escape%20The%20Global%20Object%20Alternative.png?raw=true)
 
-- Resource Show
-
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
 
 #### Component Tree
 
