@@ -67,7 +67,6 @@ The front end of ETGO is built in React using functional components. The back en
 <br>
 
 #### Wireframes and Design
-<hr>
 
 <p align="center">Desktop Landing</p>
 
@@ -97,44 +96,52 @@ Bowlby - <code>@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+
 
 ![Text](https://github.com/Henry-Cook/Escape-The-Global-Object/blob/master/readme-assets/Screen%20Shot%202020-09-13%20at%203.51.38%20PM.png?raw=true)
 
-<hr>
-
+<br>
 #### Component Tree
 
 <p align="center">
 <img src="https://github.com/Henry-Cook/Escape-The-Global-Object/blob/master/readme-assets/Screen%20Shot%202020-09-13%20at%206.18.44%20PM.png?raw=true"/>
 </p>
 
+<br>
 #### Component Hierarchy
-
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
 
 ``` structure
 
 src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
-|__ components/
-      |__ Header.jsx
+|__Conatiners/
+      |__ MainContianer
+|__ Screens/
+      |__ LoginSignup
+      |__ GamePlay
+      |__ HighScores
+|__ Components/
+      |__ Login
+      |__ Signup
+      |__ QuestionBoxEditor
+      |__ AnimationContainer
+      |__ PlayerScore
+      |__ HighScore
+|__ Layouts/
+      |__ Layout
 |__ services/
+      |__api-config
 
 ```
-
+<br>
 #### Component Breakdown
-
-> Use this section to go into further depth regarding your components, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
 
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-|    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
-|  Navigation  | functional |   n   |   n   | _The navigation will provide a link to each of the pages._       |
-|   Gallery    |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
-| Gallery Card | functional |   n   |   y   | _The cards will render the post info via props._                 |
-|    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
+|    Main Container   | functional |   Y   |   N   | _Main logic will happen here and pass data into the components that require it._               |
+|    Layout    | functional |   N   |   N   | _This will contain the responsive navigation bar._               |
+|  Login  | functional |   Y   |   N   | _Will collect user input and send via services to backend for login verification._       |
+|   Signup    |   functional   |   Y   |   N   | _Will collect user input and send via services to create a new user profile._      |
+| QuestionBoxEditor | functional |   Y   |   Y   | _Contains the questions and code editor - Exact logic of game is TBD._  |
+|    PlayerScore    | functional |   Y   |   Y   | _Will show users their previous recorded scores._ |
+|    HighScore    | functional |   Y   |   Y   | _Will users the global high scores from all players._ |
 
+<br>
 #### Time Estimates
 
 > Use this section to estimate the time necessary to build out each of the components you've described above.
@@ -169,11 +176,11 @@ src
 * Settings page - toggle music, delete account, change name. 
 * Mobile view switches to multiple choice questions. 
 
-
+<br>
 ## Code Showcase
 
 > TBD
-
+<br>
 ## Code Issues & Resolutions
 
 > TBD
