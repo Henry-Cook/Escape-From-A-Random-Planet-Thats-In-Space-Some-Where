@@ -42,12 +42,11 @@ The front end of ETGO is built in React using functional components. The back en
 
 ### Goals
 
-* Difficulty level selection
-* 50 total questions
-* Avatar Creation
-* Music 
-* Settings page - toggle music, delete account, change name. 
-* Mobile view switches to multiple choice questions. 
+* Deploy a full-stack Ruby on Rails project with a React front end.
+* Learn how to test software, in this case with Jest. 
+* Create a fun animated visual with pure HTML/CSS.
+* Show ability to integrate user authentication. 
+
 <br>
 
 ### Libraries and Dependencies
@@ -67,12 +66,11 @@ The front end of ETGO is built in React using functional components. The back en
 ### Client (Front End)
 
 #### Wireframes
+<hr>
 
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
+<p align="center">Desk Top Landing</p>
 
-![Dummy Link](url)
-
-- Desktop Landing
+![Desktop Landing](https://github.com/Henry-Cook/Escape-The-Global-Object/blob/master/readme-assets/wire-frames/Screen%20Shot%202020-09-13%20at%202.24.48%20PM.png?raw=true)
 
 ![Dummy Link](url)
 
@@ -156,9 +154,13 @@ src
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+* Difficulty level selection
+* 50 total questions
+* Avatar Creation
+* Music 
+* Settings page - toggle music, delete account, change name. 
+* Mobile view switches to multiple choice questions. 
 
-***
 
 ## Code Showcase
 
