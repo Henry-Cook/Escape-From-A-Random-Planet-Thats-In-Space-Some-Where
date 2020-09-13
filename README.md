@@ -68,15 +68,17 @@ The front end of ETGO is built in React using functional components. The back en
 #### Wireframes
 <hr>
 
-<p align="center">Desk Top Landing</p>
+<p align="center">Desktop Landing</p>
 
 ![Desktop Landing](https://github.com/Henry-Cook/Escape-The-Global-Object/blob/master/readme-assets/wire-frames/Screen%20Shot%202020-09-13%20at%202.24.48%20PM.png?raw=true)
 
-<p align="center">Desk Top Game Play Screen</p>
+<p align="center">Desktop Game Play Screen</p>
 
 ![Desktop Game Play Screen](https://github.com/Henry-Cook/Escape-The-Global-Object/blob/master/readme-assets/wire-frames/Screen%20Shot%202020-09-13%20at%202.58.21%20PM.png?raw=true)
 
-![Dummy Link](url)
+<p align="center">Desktop High Scores Screen</p>
+
+![Desktop High Scores](https://github.com/Henry-Cook/Escape-The-Global-Object/blob/master/readme-assets/wire-frames/Screen%20Shot%202020-09-13%20at%203.26.32%20PM.png?raw=true)
 
 - Resource Index
 
