@@ -80,11 +80,13 @@ The front end of ETGO is built in React using functional components. The back en
 
 ![Desktop High Scores](https://github.com/Henry-Cook/Escape-The-Global-Object/blob/master/readme-assets/wire-frames/Screen%20Shot%202020-09-13%20at%203.26.32%20PM.png?raw=true)
 
+<center>
 
 Mobile Game Play Screen            |  Mobile High Scores
-:-------------------------:|:-------------------------:
+:-------------------------:|:-------------------------:|
 ![MGPS](https://github.com/Henry-Cook/Escape-The-Global-Object/blob/master/readme-assets/Screen%20Shot%202020-09-13%20at%208.37.45%20PM.png?raw=true)  |  ![MHS](https://github.com/Henry-Cook/Escape-The-Global-Object/blob/master/readme-assets/wire-frames/Screen%20Shot%202020-09-14%20at%207.32.31%20PM.png?raw=true)
 
+</center>
 
 <p align="center">Color Palette</p>
 
