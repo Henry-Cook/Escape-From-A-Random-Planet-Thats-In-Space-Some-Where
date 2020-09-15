@@ -9,7 +9,7 @@
   - [Goals](#goals)
   - [Libraries and Dependencies](#libraries-and-dependencies)
   - [Client (Front End)](#client-front-end)
-    - [Wireframes](#Wireframes-and-Design)
+    - [Wireframes and Design](#Wireframes-and-Design)
     - [Component Tree](#component-tree)
     - [Component Hierarchy](#component-hierarchy)
     - [Component Breakdown](#component-breakdown)
