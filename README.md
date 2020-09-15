@@ -34,10 +34,10 @@ The front end of ETGO is built in React using functional components. The back en
 
 * User Authentication - Users can save their high scores and try to get on the leaderboard.
 * Full CRUD 
-	* Create - User Creation/Timed Runs
-	* Read - High Score List/Retrieve users high-score
-	* Update - High Score List/Users high-score
-	* Delete - User Deletion
+	* Create - Timed Runs/User Submitted Questions
+	* Read - High Score List/Retrieve users high-score/Questions
+	* Update - Users high-score
+	* Delete - Delete Submitted Questions
 * 10 questions -  The users answers are evaluated with [Jest](https://jestjs.io/). 
 * Code editor using [Ace - The High Performance Code Editor for the Web](https://ace.c9.io/#nav=about) 
 * HTML Canvas element that is animated and changes based on the users answers. 
@@ -126,6 +126,7 @@ src
       |__ LoginSignup
       |__ GamePlay
       |__ HighScores
+      |__ QuestionsSubmit
 |__ Components/
       |__ Login
       |__ Signup
@@ -181,7 +182,7 @@ src
 ## ERD Model
 
 <p align="center">
-<img src="https://github.com/Henry-Cook/Escape-The-Global-Object/blob/master/readme-assets/Screen%20Shot%202020-09-13%20at%201.47.40%20PM.png?raw=true" />
+<img src="https://github.com/Henry-Cook/Escape-The-Global-Object/blob/master/readme-assets/Screen%20Shot%202020-09-15%20at%2012.22.14%20PM.png?raw=true"/>
 <p>
 
 <br>
