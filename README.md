@@ -164,7 +164,7 @@ src
 
 | Task                                     | Priority | Estimated Time | Time Invested | Actual Time |
 | ---------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Create Models, Controllers, Routes       |    H     |     1 hrs      |      TBD      |     TBD     |
+| Create Models, Controllers, Routes       |    H     |     1 hrs      |    27 Mins    |     TBD     |
 | Build out CRUD methods in Controllers    |    H     |     2 hrs      |      TBD      |     TBD     |
 | Add user authentication                  |    M     |     3 hrs      |      TBD      |     TBD     |
 | Build Layout                             |    L     |     .5 hrs     |      TBD      |     TBD     |
