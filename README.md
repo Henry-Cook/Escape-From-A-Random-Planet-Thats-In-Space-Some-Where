@@ -165,8 +165,8 @@ src
 | Task                                     | Priority | Estimated Time | Time Invested | Actual Time |
 | ---------------------------------------- | :------: | :------------: | :-----------: | :---------: |
 | Create Models, Controllers, Routes       |    H     |     1 hrs      |    27 Mins    |     TBD     |
-| Build out CRUD methods in Controllers    |    H     |     2 hrs      |   8.5 Mins    |     TBD     |
-| Add user authentication                  |    M     |     3 hrs      |      TBD      |     TBD     |
+| Build out CRUD methods in Controllers    |    H     |     2 hrs      |    51 mins    |     TBD     |
+| Add user authentication                  |    M     |     3 hrs      |   8.5 Mins    |     TBD     |
 | Build Layout                             |    L     |     .5 hrs     |      TBD      |     TBD     |
 | Login/Signup                             |    M     |     2 hrs      |      TBD      |     TBD     |
 | QuestionBoxEditor                        |    H     |     5 hrs      |      TBD      |     TBD     |
