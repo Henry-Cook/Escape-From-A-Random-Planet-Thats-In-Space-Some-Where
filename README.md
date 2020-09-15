@@ -122,7 +122,7 @@ Roboto - <code>@import url('https://fonts.googleapis.com/css2?family=Roboto&disp
 ```structure
 
 src
-|__Conatiners/
+|__Conainers/
       |__ MainContianer
 |__ Screens/
       |__ LoginSignup
@@ -167,7 +167,8 @@ src
 | Create Models, Controllers, Routes       |    H     |     1 hrs      |    27 Mins    |     TBD     |
 | Build out CRUD methods in Controllers    |    H     |     2 hrs      |    51 mins    |     TBD     |
 | Add user authentication                  |    M     |     3 hrs      |   8.5 Mins    |     TBD     |
-| Build Layout                             |    L     |     .5 hrs     |      TBD      |     TBD     |
+| Add Client Structure                     |    H     |    15 mins     |    3 mins     |     TBD     |
+| Build Layout                             |    L     |     .5 hrs     |    54 mins    |     TBD     |
 | Login/Signup                             |    M     |     2 hrs      |      TBD      |     TBD     |
 | QuestionBoxEditor                        |    H     |     5 hrs      |      TBD      |     TBD     |
 | Jest Testing Implementation & Game Logic |    H     |     5 hrs      |      TBD      |     TBD     |
@@ -175,7 +176,7 @@ src
 | PlayerScore                              |    L     |     1 hrs      |      TBD      |     TBD     |
 | HighScore                                |    L     |     1 hrs      |      TBD      |     TBD     |
 | Styling                                  |    L     |     5 hrs      |      TBD      |     TBD     |
-| TOTAL                                    |          |    30.5 hrs    |      TBD      |     TBD     |
+| TOTAL                                    |          |   30:45 hrs    |      TBD      |     TBD     |
 
 <br>
 
