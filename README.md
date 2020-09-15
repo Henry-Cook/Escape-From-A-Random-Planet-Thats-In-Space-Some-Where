@@ -63,6 +63,7 @@ The front end of ETGO is built in React using functional components. The back en
 | Axios | Quick and easy API calls to the backend |
 |    Ruby on Rails      | A web development frame work built on top of the ruby programming language |
 |  Active Record  | An easy to use ORM(Object Relational Mapping) that enables connection to the PostgreSQL database  |
+| Bycrpt/JWT | These two packages are used for user authentication |
 
 <br>
 
