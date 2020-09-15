@@ -166,10 +166,10 @@ src
 | ---------------------------------------- | :------: | :------------: | :-----------: | :---------: |
 | Create Models, Controllers, Routes       |    H     |     1 hrs      |    27 Mins    |     TBD     |
 | Build out CRUD methods in Controllers    |    H     |     2 hrs      |    51 mins    |     TBD     |
-| Add user authentication                  |    M     |     3 hrs      |   8.5 Mins    |     TBD     |
+| Add user authentication                  |    M     |     3 hrs      |    8 Mins     |     TBD     |
 | Add Client Structure                     |    H     |    15 mins     |    3 mins     |     TBD     |
 | Build Layout                             |    L     |     .5 hrs     |    54 mins    |     TBD     |
-| Login/Signup                             |    M     |     2 hrs      |      TBD      |     TBD     |
+| Login/Signup                             |    M     |     2 hrs      |   1:10 hrs    |     TBD     |
 | QuestionBoxEditor                        |    H     |     5 hrs      |      TBD      |     TBD     |
 | Jest Testing Implementation & Game Logic |    H     |     5 hrs      |      TBD      |     TBD     |
 | AnimationContainer                       |    H     |     5 hrs      |      TBD      |     TBD     |
