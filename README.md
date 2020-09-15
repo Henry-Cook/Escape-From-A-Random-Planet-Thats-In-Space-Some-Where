@@ -188,7 +188,7 @@ src
 ## Post-MVP
 
 * Difficulty level selection
-* 50 total questions
+* 50 total questions/Move questions into DB
 * Avatar Creation
 * Music 
 * Settings page - toggle music, delete account, change name. 
