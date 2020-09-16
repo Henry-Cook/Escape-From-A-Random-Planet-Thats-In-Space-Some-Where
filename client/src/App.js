@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import Main from "./containers/main/Main";
-import LoginSignUp from "./screens/login_signup/LoginSignUp";
+import Signup from "./components/signup/Signup";
+import Login from "./components/login/Login";
 import { Route, useHistory } from "react-router-dom";
 import {
   loginUser,
@@ -9,18 +10,19 @@ import {
   verifyUser,
   removeToken,
 } from "./services/auth";
+import Layout from "./layouts/Layout";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
   const history = useHistory();
 
-  // useEffect(() => {
-  //   const handleVerify = async => {
-  //     const userData = await verifyUser();
-  //     setCurrentUser(userData)
-  //   }
-  //   handleVerify()
-  // }, [])
+  useEffect(() => {
+    const handleVerify = async () => {
+      const userData = await verifyUser();
+      setCurrentUser(userData);
+    };
+    handleVerify();
+  }, []);
 
   const loginSubmit = async (loginData) => {
     const userData = await loginUser(loginData);
@@ -28,15 +30,27 @@ function App() {
     history.push("/");
   };
 
+  const registerSubmit = async (registerData) => {
+    const userData = await registerUser(registerData);
+    setCurrentUser(userData);
+    history.push("/");
+  };
+
   return (
     <>
-      <Route path="/" exact>
-        <Main />
-      </Route>
+      <Layout currentUser={currentUser}>
+        <Route path="/signup">
+          <Signup registerSubmit={registerSubmit} />
+        </Route>
 
-      <Route>
-        <LoginSignUp path="/login" exact loginSubmit={loginSubmit} />
-      </Route>
+        <Route path="/login">
+          <Login loginSubmit={loginSubmit} />
+        </Route>
+
+        <Route path="/" exact>
+          <Main />
+        </Route>
+      </Layout>
     </>
   );
 }

@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import "./loginSignup.css";
 import { Card, FormControl, Button } from "react-bootstrap";
 
-export default function LoginSignUp(props) {
+export default function Login(props) {
   const [formData, setFormData] = useState({
     username: "",
     password: "",
@@ -21,11 +20,11 @@ export default function LoginSignUp(props) {
       <div className="login-div">
         <Card style={{ width: "18rem", height: "25rem" }}>
           <Card.Body>
-            <h1 className="login-title">Login</h1>
+            <h1 className="login-title">Signup</h1>
             <form
               onSubmit={(e) => {
                 e.preventDefault();
-                props.loginSubmit(formData);
+                props.registerSubmit(formData);
               }}
             >
               <FormControl
