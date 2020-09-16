@@ -14,10 +14,10 @@ export default function QuestionBox(props) {
     index: "",
   });
   const [continueGame, setContinueGame] = useState(true);
-  // const [index, setIndex] = useState(0);
+  const [win, setWin] = useState(false);
   let { questions } = props;
 
-  const { time, start, pause, reset, isRunning } = useTimer({
+  const { time, start, reset } = useTimer({
     initialTime: 200,
     timerType: "DECREMENTAL",
     endTime: 0,
@@ -32,6 +32,7 @@ export default function QuestionBox(props) {
   const startGame = () => {
     setBegin(true);
     nextQuestion(0);
+    props.totalTimeStart();
   };
 
   const nextQuestion = (index) => {
@@ -55,18 +56,27 @@ export default function QuestionBox(props) {
     });
   };
 
-  const testAnswer = (e) => {
+  const testAnswer = () => {
     let answer = new Function(currentQuestion.question)();
     answer.toString() === currentQuestion.answer ? nextRound() : failedGame();
   };
 
   const nextRound = () => {
-    nextQuestion(currentQuestion.index + 1);
-    startTimer();
+    if (currentQuestion.index + 1 === questions.length) {
+      playerWon();
+    } else {
+      nextQuestion(currentQuestion.index + 1);
+      startTimer();
+    }
   };
 
   const failedGame = () => {
     setContinueGame(false);
+  };
+
+  const playerWon = () => {
+    props.totalTimePause();
+    setWin(true);
   };
 
   /////
@@ -86,7 +96,7 @@ export default function QuestionBox(props) {
           </>
         )}
 
-        {begin && continueGame && (
+        {begin && continueGame && !win && (
           <>
             <h1>{`Time Left: ${time}`}</h1>
             <AceEditor
@@ -115,6 +125,12 @@ export default function QuestionBox(props) {
         {!continueGame && (
           <>
             <h1>you lost!</h1>
+          </>
+        )}
+
+        {win && (
+          <>
+            <h1>{`You Won, Total Time: ${props.totalTime}`}</h1>
           </>
         )}
       </div>

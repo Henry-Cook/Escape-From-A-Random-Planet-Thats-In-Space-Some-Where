@@ -170,7 +170,7 @@ src
 | Build Layout                          |    L     |     .5 hrs     |    54 mins    |     TBD     |
 | Login/Signup                          |    M     |     2 hrs      |   1:30 hrs    |     TBD     |
 | QuestionBoxEditor                     |    H     |     5 hrs      |    1:08hrs    |     TBD     |
-| Game Logic                            |    H     |     5 hrs      |    4.34hrs    |     TBD     |
+| Game Logic                            |    H     |     5 hrs      |    4.45hrs    |     TBD     |
 | AnimationContainer                    |    H     |     5 hrs      |      TBD      |     TBD     |
 | PlayerScore                           |    L     |     1 hrs      |      TBD      |     TBD     |
 | HighScore                             |    L     |     1 hrs      |      TBD      |     TBD     |
@@ -203,6 +203,6 @@ src
 > TBD
 > <br>
 
-## Code Issues & Resolutions
+## Change Log / Issues
 
 > TBD
