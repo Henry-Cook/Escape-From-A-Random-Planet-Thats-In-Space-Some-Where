@@ -11,7 +11,6 @@ export default function Main() {
   useEffect(() => {
     const getAllQuestions = async () => {
       const data = await fetchQuestions();
-      console.log(data);
       setQuestions(data.data);
     };
     getAllQuestions();

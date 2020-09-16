@@ -4,7 +4,7 @@ import QuestionBox from "../../components/question_box_editor/QuestionBox";
 export default function Gameplay(props) {
   return (
     <div>
-      <QuestionBox />
+      <QuestionBox questions={props.questions} />
     </div>
   );
 }
