@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Card, FormControl, Button } from "react-bootstrap";
+import "./login.css";
 
 export default function Login(props) {
   const [formData, setFormData] = useState({
@@ -18,7 +19,9 @@ export default function Login(props) {
   return (
     <>
       <div className="login-div">
-        <Card style={{ width: "18rem", height: "25rem" }}>
+        <Card
+          style={{ width: "30rem", height: "25rem", background: "#12263a" }}
+        >
           <Card.Body>
             <h1 className="login-title">Login</h1>
             <form
@@ -38,7 +41,7 @@ export default function Login(props) {
                 type="password"
                 name="password"
               />
-              <Button type="submit" variant="info">
+              <Button type="submit" variant="primary" style={{ color: "#fff" }}>
                 Submit
               </Button>
             </form>
