@@ -1,0 +1,12 @@
+.login-div {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light)
+}
+
+.login-title {
+  font-family: 'Bowlby One SC', cursive;
+  color: var(--light);
+}
