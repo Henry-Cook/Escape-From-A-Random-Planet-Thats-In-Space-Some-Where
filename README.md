@@ -170,7 +170,7 @@ src
 | Add Client Structure                     |    H     |    15 mins     |    3 mins     |     TBD     |
 | Build Layout                             |    L     |     .5 hrs     |    54 mins    |     TBD     |
 | Login/Signup                             |    M     |     2 hrs      |   1:30 hrs    |     TBD     |
-| QuestionBoxEditor                        |    H     |     5 hrs      |      TBD      |     TBD     |
+| QuestionBoxEditor                        |    H     |     5 hrs      |    1:08hrs    |     TBD     |
 | Jest Testing Implementation & Game Logic |    H     |     5 hrs      |      TBD      |     TBD     |
 | AnimationContainer                       |    H     |     5 hrs      |      TBD      |     TBD     |
 | PlayerScore                              |    L     |     1 hrs      |      TBD      |     TBD     |
