@@ -17,8 +17,8 @@ export default function Main() {
   }, []);
 
   return (
-    <div>
+    <>
       <Gameplay questions={questions} />
-    </div>
+    </>
   );
 }

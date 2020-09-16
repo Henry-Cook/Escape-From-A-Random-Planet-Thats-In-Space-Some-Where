@@ -174,7 +174,7 @@ src
 | AnimationContainer                    |    H     |     5 hrs      |      TBD      |     TBD     |
 | PlayerScore                           |    L     |     1 hrs      |      TBD      |     TBD     |
 | HighScore                             |    L     |     1 hrs      |      TBD      |     TBD     |
-| Styling                               |    L     |     5 hrs      |      TBD      |     TBD     |
+| Styling                               |    L     |     5 hrs      |    31 mins    |     TBD     |
 | TOTAL                                 |          |   30:45 hrs    |      TBD      |     TBD     |
 
 <br>

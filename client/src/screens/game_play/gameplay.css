@@ -1,0 +1,19 @@
+.gameplay {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.animation {
+  height: 80vh;
+  width: 45vw;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+
+.questions {
+  height: 80vh;
+  width: 45vw;
+  border: 1px solid black;
+  margin-top: 20px;
+}
