@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Card, FormControl, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./login.css";
 
 export default function Login(props) {
@@ -20,6 +21,7 @@ export default function Login(props) {
     <>
       <div className="login-div">
         <Card
+          className="card"
           style={{ width: "30rem", height: "25rem", background: "#12263a" }}
         >
           <Card.Body>
@@ -31,20 +33,28 @@ export default function Login(props) {
               }}
             >
               <FormControl
+                className="login-input"
                 placeholder="Username"
                 name="username"
                 onChange={handleChange}
               />
               <FormControl
+                className="login-input"
                 onChange={handleChange}
                 placeholder="Password"
                 type="password"
                 name="password"
               />
-              <Button type="submit" variant="primary" style={{ color: "#fff" }}>
+              <Button
+                className="btn"
+                type="submit"
+                variant="primary"
+                style={{ color: "#fff" }}
+              >
                 Submit
               </Button>
             </form>
+            <Link to="/signup">Signup</Link>
           </Card.Body>
         </Card>
       </div>

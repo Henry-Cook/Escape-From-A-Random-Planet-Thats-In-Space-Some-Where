@@ -10,3 +10,21 @@
   font-family: 'Bowlby One SC', cursive;
   color: var(--light);
 }
+
+.signup-submit-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.card {
+  text-align: center;
+}
+
+.login-input {
+  margin-top: 20px;
+}

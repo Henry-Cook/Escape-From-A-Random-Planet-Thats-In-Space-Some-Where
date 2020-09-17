@@ -19,7 +19,7 @@ function App() {
   useEffect(() => {
     const handleVerify = async () => {
       const userData = await verifyUser();
-      setCurrentUser(userData);
+      userData ? setCurrentUser(userData) : history.push("/login");
     };
     handleVerify();
   }, []);
@@ -39,7 +39,7 @@ function App() {
   return (
     <>
       <Layout currentUser={currentUser}>
-        <Route path="/signup">
+        <Route path="/signup" exact>
           <Signup registerSubmit={registerSubmit} />
         </Route>
 
