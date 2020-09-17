@@ -25,6 +25,18 @@ export default function AnimationContainer() {
       <div className="animated-cloud-big2">
         <div className="cloud"></div>
       </div>
+
+      <div className="rocket-ship-container">
+        <div className="rocket-ship">
+          <div className="nose"></div>
+          <div className="window"></div>
+          <div className="innerwindow"></div>
+          <div className="right-fin"></div>
+          <div className="left-fin"></div>
+          <div className="thruster"></div>
+          <div className="propulsion"></div>
+        </div>
+      </div>
     </div>
   );
 }
