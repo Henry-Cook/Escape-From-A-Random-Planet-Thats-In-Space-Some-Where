@@ -1,5 +1,5 @@
 class UserSubmittedQuestionsController < ApplicationController
-  # before_action :authorize_request, except: :create
+  before_action :authorize_request, except: :create
   def index
     @questions = UserSubmittedQuestion.all
 
