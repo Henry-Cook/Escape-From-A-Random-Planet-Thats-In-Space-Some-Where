@@ -12,6 +12,7 @@ export default function QuestionBox(props) {
   const [currentQuestion, setCurrentQuestion] = useState({
     question: "",
     answer: "",
+    prompt: "",
     index: "",
   });
   const [continueGame, setContinueGame] = useState(true);
@@ -19,7 +20,7 @@ export default function QuestionBox(props) {
   let { questions, changeExplode } = props;
 
   const { time, start, reset } = useTimer({
-    initialTime: 200,
+    initialTime: 20,
     timerType: "DECREMENTAL",
     endTime: 0,
     onTimeOver: () => {
@@ -40,6 +41,7 @@ export default function QuestionBox(props) {
     setCurrentQuestion({
       question: questions[index].question,
       answer: questions[index].answer,
+      prompt: questions[index].prompt,
       index: questions.indexOf(questions[index]),
     });
     startTimer();
@@ -103,15 +105,17 @@ export default function QuestionBox(props) {
                   fix the ship and lift off, but the crash has caused the
                   software to malfunction! Type in the embedded code editor and
                   solve JavaScript based questions to gain altitude and escape
-                  the global object!!
+                  the global object!
                 </p>
                 <p className="start-text">
-                  You have 20 seconds to answer questions, if the time runs out
-                  or you submit the wrong answer the ship blows up!! No second
-                  chances here!!!
+                  <strong>
+                    You have 20 seconds to answer questions, if the time runs
+                    out or you submit the wrong answer, the ship blows up! No
+                    second chances here!
+                  </strong>
                 </p>
               </div>
-              <Button variant="primary" onClick={startGame}>
+              <Button variant="dark" onClick={startGame} size="lg">
                 Start
               </Button>
             </>
@@ -119,16 +123,21 @@ export default function QuestionBox(props) {
 
           {begin && continueGame && !win && (
             <>
-              <h1>{`Time Left: ${time}`}</h1>
+              <div className="text-timer">
+                <p className="question-text">
+                  <strong>{currentQuestion.prompt}</strong>
+                </p>
+                <h3>{`Time Left: ${time} Seconds`}</h3>
+              </div>
               <AceEditor
                 mode="javascript"
                 onChange={userInput}
                 value={currentQuestion.question}
                 theme="monokai"
                 name="editor"
-                fontSize={16}
-                height="40%"
-                width="80%"
+                fontSize={14}
+                height="50%"
+                width="90%"
                 showPrintMargin={true}
                 showGutter={true}
                 highlightActiveLine={true}
@@ -138,7 +147,7 @@ export default function QuestionBox(props) {
                   wrap: true,
                 }}
               />
-              <Button variant="info" onClick={testAnswer}>
+              <Button variant="dark" onClick={testAnswer}>
                 Submit
               </Button>
             </>
