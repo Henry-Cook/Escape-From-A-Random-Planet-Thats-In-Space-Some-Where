@@ -170,7 +170,7 @@ src
 | Build Layout                          |    L     |     .5 hrs     |    54 mins    |     TBD     |
 | Login/Signup                          |    M     |     2 hrs      |   1:30 hrs    |     TBD     |
 | QuestionBoxEditor                     |    H     |     5 hrs      |   1:08 hrs    |     TBD     |
-| Game Logic                            |    H     |     5 hrs      |   4:45 hrs    |     TBD     |
+| Game Logic                            |    H     |     5 hrs      |   6:16 hrs    |     TBD     |
 | AnimationContainer                    |    H     |     5 hrs      |   4:53 hrs    |     TBD     |
 | Scores                                |    L     |     2 hrs      |     2 hrs     |     TBD     |
 | Styling                               |    L     |     5 hrs      |   1:16 hrs    |     TBD     |
