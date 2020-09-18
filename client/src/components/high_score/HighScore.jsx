@@ -1,15 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useHistory } from "react-router-dom";
 import { Card, Spinner } from "react-bootstrap";
 import "./HighScore.css";
+import { verifyUser } from "../../services/auth";
+import { fetchUsersScores } from "../../services/highscore";
 
 export default function HighScore(props) {
-  const { highScores, users } = props;
-  console.log(users);
+  const [currentUser, setCurrentUser] = useState(null);
+  const [userScores, setUsersScores] = useState(null);
+  const { highScores } = props;
+  const history = useHistory();
 
-  const getName = () => {
-    for (let i = 0; i > highScores.length; i++) {
-      console.log(highScores[i]);
-    }
+  useEffect(() => {
+    const handleVerify = async () => {
+      const userData = await verifyUser();
+      userData ? setCurrentUser(userData) : history.push("/login");
+    };
+    handleVerify();
+  }, []);
+
+  const getUserScores = async () => {
+    const scores = await fetchUsersScores(currentUser.id);
+    setUsersScores(scores.data);
   };
 
   return (
@@ -24,14 +36,20 @@ export default function HighScore(props) {
           {!highScores && <Spinner animation="border" variant="light" />}
 
           {highScores &&
-            highScores.map((score) => (
+            highScores.map((score, i) => (
               <p className="score" key={score.id}>
-                {`${score.score}`}
+                {`${i + 1} ${score.user.username} : ${score.score}`}
               </p>
             ))}
           <br />
           <h1 className="highscore-title">Personal High Scores</h1>
-          {!highScores && <Spinner animation="border" variant="light" />}
+          {!userScores && <Spinner animation="border" variant="light" />}
+          {userScores &&
+            userScores.map((score, i) => (
+              <p className="score" key={score.id}>
+                {`${score.score}`}
+              </p>
+            ))}
         </Card.Body>
       </Card>
     </div>
