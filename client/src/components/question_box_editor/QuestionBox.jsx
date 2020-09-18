@@ -19,7 +19,7 @@ export default function QuestionBox(props) {
   let { questions, changeExplode } = props;
 
   const { time, start, reset } = useTimer({
-    initialTime: 2,
+    initialTime: 200,
     timerType: "DECREMENTAL",
     endTime: 0,
     onTimeOver: () => {
@@ -58,8 +58,13 @@ export default function QuestionBox(props) {
   };
 
   const testAnswer = () => {
-    let answer = new Function(currentQuestion.question)();
-    answer.toString() === currentQuestion.answer ? nextRound() : failedGame();
+    let answer = eval(currentQuestion.question);
+    try {
+      answer.toString() === currentQuestion.answer ? nextRound() : failedGame();
+    } catch (error) {
+      console.error(error);
+      failedGame();
+    }
   };
 
   const nextRound = () => {
@@ -121,15 +126,13 @@ export default function QuestionBox(props) {
                 value={currentQuestion.question}
                 theme="monokai"
                 name="editor"
-                fontSize={18}
+                fontSize={16}
                 height="40%"
                 width="80%"
                 showPrintMargin={true}
                 showGutter={true}
                 highlightActiveLine={true}
                 setOptions={{
-                  enableBasicAutocompletion: true,
-                  enableLiveAutocompletion: true,
                   showLineNumbers: true,
                   tabSize: 2,
                   wrap: true,

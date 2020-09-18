@@ -12,10 +12,40 @@ TimedScore.destroy_all
 User.destroy_all
 
 
-Question.create!(question: "console.log(2 + 2)", answer: "4")
-Question.create!(question: "console.log(5 + 2)", answer: "7")
-Question.create!(question: "console.log(7 + 3)", answer: "10")
-Question.create!(question: "console.log(2 + 1)", answer: "3")
+Question.create!(question: 'const OsmiumPulseThrusters = () => {  
+  let dilithiumVacuum = "stable";  
+  let warpNode = "maximum";  
+  let quantumImpulser = "Blow Up Ship";  
+  if (dilithiumVacuum === "stable" && warpNode === "maximum") {  
+    console.log("stabilized"); 
+    } else { 
+      return quantumImpulser; 
+      } 
+    } 
+
+    OsmiumPulseThrusters() ;',
+ answer: "stabilized", prompt: 'I\'m detecting a destabilization in the osmium pulse thruster. It seems like the function below isn\'t returning what it should! Fix it so we don\'t die!'
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 puts "#{Question.count} Questions Created"
 
