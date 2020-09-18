@@ -1,8 +1,11 @@
 import React from "react";
+import { useState } from "react";
 import "./animation.css";
 import imgPath from "./assets/stars.png";
 
-export default function AnimationContainer() {
+export default function AnimationContainer(props) {
+  const { explode } = props;
+
   return (
     <div className="animation-box" style={{ backgroundColor: "#12263a" }}>
       <div className="animated-cloud-little1">
@@ -37,6 +40,42 @@ export default function AnimationContainer() {
           <div className="propulsion"></div>
         </div>
       </div>
+
+      {explode && (
+        <>
+          <div className="explosion-animation">
+            <div className="explosion">
+              <div className="sm-explosion"></div>
+              <div className="med-explosion"></div>
+              <div className="lg-explosion"></div>
+            </div>
+          </div>
+
+          <div className="explosion-animation1">
+            <div className="explosion1">
+              <div className="sm-explosion"></div>
+              <div className="med-explosion"></div>
+              <div className="lg-explosion"></div>
+            </div>
+          </div>
+
+          <div className="explosion-animation2">
+            <div className="explosion2">
+              <div className="sm-explosion"></div>
+              <div className="med-explosion"></div>
+              <div className="lg-explosion"></div>
+            </div>
+          </div>
+
+          <div className="explosion-animation3">
+            <div className="explosion3">
+              <div className="sm-explosion"></div>
+              <div className="med-explosion"></div>
+              <div className="lg-explosion"></div>
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 }

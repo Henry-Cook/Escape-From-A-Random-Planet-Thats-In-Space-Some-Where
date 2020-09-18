@@ -16,10 +16,10 @@ export default function QuestionBox(props) {
   });
   const [continueGame, setContinueGame] = useState(true);
   const [win, setWin] = useState(false);
-  let { questions } = props;
+  let { questions, changeExplode } = props;
 
   const { time, start, reset } = useTimer({
-    initialTime: 200,
+    initialTime: 2,
     timerType: "DECREMENTAL",
     endTime: 0,
     onTimeOver: () => {
@@ -73,6 +73,7 @@ export default function QuestionBox(props) {
 
   const failedGame = () => {
     setContinueGame(false);
+    changeExplode();
   };
 
   const playerWon = () => {
