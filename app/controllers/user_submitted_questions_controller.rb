@@ -13,7 +13,7 @@ class UserSubmittedQuestionsController < ApplicationController
   end
 
   def users_questions
-    @questions = UserSubmittedQuestion.where(user_id: params[:id])
+    @questions = UserSubmittedQuestion.where(user_id: @user.id)
 
     render json: @questions
   end

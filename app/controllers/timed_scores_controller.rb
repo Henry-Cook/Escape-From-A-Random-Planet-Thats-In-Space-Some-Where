@@ -2,10 +2,9 @@ class TimedScoresController < ApplicationController
   # before_action :authorize_request
 
   def index
-    @timed_scores = TimedScore.order(:score).limit(5)
-    @with_user = User.where(user_id: @timed_score.user_id)
+    @timed_scores = TimedScore.includes(:user).order(:score).limit(5)
 
-    render json: @with_user, include: :timed_scores
+    render json: @timed_scores, include: :user
   end
 
   def create
@@ -15,8 +14,9 @@ class TimedScoresController < ApplicationController
   end
 
   def get_users_scores
-    @time_scores = TimedScore.find()
-    @user_scores = @timed_scores.where(:user_id == current_user)
+    @user_scores = TimedScore.where(user_id: params[:id]).order(:score).limit(5)
+  
+    render json: @user_scores
   end
 
 end

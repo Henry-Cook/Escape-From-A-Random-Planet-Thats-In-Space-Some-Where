@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :user
 
   get "timedscores", controller: 'timed_scores', action: :index
+  get "timedscores/:id", controller: 'timed_scores', action: :get_users_scores 
   post "timedscores", controller: 'timed_scores', action: :create
 
   get "userquestions", controller: 'user_submitted_questions', action: :index
