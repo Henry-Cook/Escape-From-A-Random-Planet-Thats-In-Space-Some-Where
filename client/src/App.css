@@ -9,3 +9,15 @@ font-family: 'Roboto', sans-serif; */
   --gray: #788aa3;
   --blue: #0496ff;
 }
+
+.custom-switch {
+  padding-left: 0;
+}
+
+.custom-control {
+  position: relative;
+  z-index: 1;
+  display: block;
+  min-height: 1.5rem;
+  padding-left: 0;
+}
