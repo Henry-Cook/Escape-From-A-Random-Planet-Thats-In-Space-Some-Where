@@ -173,7 +173,7 @@ src
 | Game Logic                            |    H     |     5 hrs      |   6:16 hrs    |     TBD     |
 | AnimationContainer                    |    H     |     5 hrs      |   4:53 hrs    |     TBD     |
 | Scores                                |    L     |     2 hrs      |     2 hrs     |     TBD     |
-| Styling                               |    L     |     5 hrs      |   1:16 hrs    |     TBD     |
+| Styling                               |    L     |     5 hrs      |   1:53 hrs    |     TBD     |
 | TOTAL                                 |          |   30:45 hrs    |      TBD      |     TBD     |
 
 <br>
