@@ -3,8 +3,9 @@ class TimedScoresController < ApplicationController
 
   def index
     @timed_scores = TimedScore.order(:score).limit(5)
+    @with_user = User.where(user_id: @timed_score.user_id)
 
-    render json: @timed_scores
+    render json: @with_user, include: :timed_scores
   end
 
   def create
