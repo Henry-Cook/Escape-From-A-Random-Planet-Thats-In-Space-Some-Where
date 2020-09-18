@@ -163,7 +163,7 @@ src
 
 | Task                                  | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Create Models, Controllers, Routes    |    H     |     1 hrs      |    27 Mins    |     TBD     |
+| Create Models, Controllers, Routes    |    H     |     1 hrs      |    47 Mins    |     TBD     |
 | Build out CRUD methods in Controllers |    H     |     2 hrs      |    51 mins    |     TBD     |
 | Add user authentication               |    M     |     3 hrs      |    8 Mins     |     TBD     |
 | Add Client Structure                  |    H     |    15 mins     |    3 mins     |     TBD     |
@@ -172,9 +172,8 @@ src
 | QuestionBoxEditor                     |    H     |     5 hrs      |   1:08 hrs    |     TBD     |
 | Game Logic                            |    H     |     5 hrs      |   4:45 hrs    |     TBD     |
 | AnimationContainer                    |    H     |     5 hrs      |   4:53 hrs    |     TBD     |
-| PlayerScore                           |    L     |     1 hrs      |      TBD      |     TBD     |
-| HighScore                             |    L     |     1 hrs      |      TBD      |     TBD     |
-| Styling                               |    L     |     5 hrs      |    31 mins    |     TBD     |
+| Scores                                |    L     |     2 hrs      |     2 hrs     |     TBD     |
+| Styling                               |    L     |     5 hrs      |   1:16 hrs    |     TBD     |
 | TOTAL                                 |          |   30:45 hrs    |      TBD      |     TBD     |
 
 <br>

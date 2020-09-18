@@ -11,6 +11,7 @@ import {
   removeToken,
 } from "./services/auth";
 import Layout from "./layouts/Layout";
+import Switch from "react-bootstrap/esm/Switch";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -43,12 +44,12 @@ function App() {
           <Signup registerSubmit={registerSubmit} />
         </Route>
 
-        <Route path="/login">
+        <Route path="/login" exact>
           <Login loginSubmit={loginSubmit} />
         </Route>
 
-        <Route path="/" exact>
-          <Main />
+        <Route path="/">
+          <Main currentUser={currentUser} />
         </Route>
       </Layout>
     </>

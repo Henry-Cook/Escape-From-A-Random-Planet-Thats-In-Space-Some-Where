@@ -2,7 +2,7 @@ class TimedScoresController < ApplicationController
   # before_action :authorize_request
 
   def index
-    @timed_scores = TimedScore.order(:score).limit(10)
+    @timed_scores = TimedScore.order(:score).limit(5)
 
     render json: @timed_scores
   end

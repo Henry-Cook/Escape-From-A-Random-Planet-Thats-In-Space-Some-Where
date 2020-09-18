@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar } from "react-bootstrap";
+import Nav from "react-bootstrap/Nav";
 import "./layout.css";
 
 export default function Layout(props) {
@@ -7,19 +8,30 @@ export default function Layout(props) {
 
   return (
     <>
-      {/* {currentUser && ( */}
       <div>
-        <Navbar bg="dark">
-          <Navbar.Brand href="#home">
-            {/* <img
-            alt=""
-            src="#"
-            width="30"
-            height="30"
-            className="d-inline-block align-top"
-          /> */}
+        <Navbar bg="dark" expand="lg">
+          <Navbar.Brand href="/">
+            <h1 className="nav-title">Escape the Global Object</h1>
           </Navbar.Brand>
-          <h1 className="nav-title">Escape the Global Object</h1>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          {currentUser && (
+            <>
+              <Navbar.Collapse
+                id="basic-navbar-nav"
+                className="justify-content-end"
+              >
+                <Nav.Link className="link" href="/highscore">
+                  High Scores
+                </Nav.Link>
+                <Nav.Link className="link" href="/highscore">
+                  Submit Question
+                </Nav.Link>
+                <Nav.Link className="link" href="/highscore">
+                  Settings
+                </Nav.Link>
+              </Navbar.Collapse>
+            </>
+          )}
         </Navbar>
       </div>
       {/* )} */}

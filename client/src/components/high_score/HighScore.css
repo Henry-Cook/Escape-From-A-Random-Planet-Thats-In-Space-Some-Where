@@ -1,0 +1,21 @@
+.highscore-div {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--light)
+}
+
+.score-card {
+  margin-top: 20px;
+}
+
+.highscore-title {
+  font-family: 'Bowlby One SC', cursive;
+  color: var(--light);
+}
+
+.score {
+  color: var(--light);
+  font-size: 1.5vw;
+}
