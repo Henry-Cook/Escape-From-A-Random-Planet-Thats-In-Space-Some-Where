@@ -6,20 +6,32 @@ import AnimationContainer from "../../components/animation_container/AnimationCo
 
 export default function Gameplay(props) {
   const [explode, setExplode] = useState(null);
+  const [skyColor, setColor] = useState("#12263a");
+  const [lose, setLose] = useState(null);
+  const [gameWon, setGameWon] = useState(null);
   const { time, start, pause, reset, isRunning } = useTimer({
     initialTime: 0,
   });
 
+  const setSkyColor = (color) => {
+    setColor(color);
+  };
+
   const { questions } = props;
 
-  const changeExplode = () => {
-    setExplode(true);
+  const changeExplode = (state) => {
+    setExplode(state);
   };
 
   return (
     <div className="gameplay">
       <div className="animation">
-        <AnimationContainer explode={explode} />
+        <AnimationContainer
+          explode={explode}
+          skyColor={skyColor}
+          lose={lose}
+          gameWon={gameWon}
+        />
       </div>
 
       <div className="questions">
@@ -29,6 +41,10 @@ export default function Gameplay(props) {
           totalTimeStart={start}
           totalTimePause={pause}
           changeExplode={changeExplode}
+          setSkyColor={setSkyColor}
+          setLose={setLose}
+          setGameWon={setGameWon}
+          quickReset={reset}
         />
       </div>
     </div>

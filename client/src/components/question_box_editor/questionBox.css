@@ -41,3 +41,21 @@
 .question-text {
   font-size: 20px;
 }
+
+.lose-title {
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 5vw;
+}
+
+.lose-text {
+  font-size: 4vw;
+}
+
+.win-title {
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 5vw;
+}
+
+.win-text {
+  font-size: 4vw;
+}

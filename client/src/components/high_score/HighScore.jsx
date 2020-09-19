@@ -11,18 +11,20 @@ export default function HighScore(props) {
   const { highScores } = props;
   const history = useHistory();
 
-  useEffect(() => {
-    const handleVerify = async () => {
-      const userData = await verifyUser();
-      userData ? setCurrentUser(userData) : history.push("/login");
-    };
-    handleVerify();
-  }, []);
+  let userData;
 
-  const getUserScores = async () => {
-    const scores = await fetchUsersScores(currentUser.id);
-    setUsersScores(scores.data);
-  };
+  useEffect(() => {
+    const getUser = async () => {
+      userData = await verifyUser();
+    };
+    const getUserScores = async () => {
+      const scores = await fetchUsersScores(userData.id);
+      setUsersScores(scores.data);
+    };
+    getUser().then(() => {
+      getUserScores();
+    });
+  }, []);
 
   return (
     <div className="highscore-div">
@@ -45,7 +47,7 @@ export default function HighScore(props) {
           <h1 className="highscore-title">Personal High Scores</h1>
           {!userScores && <Spinner animation="border" variant="light" />}
           {userScores &&
-            userScores.map((score, i) => (
+            userScores.map((score) => (
               <p className="score" key={score.id}>
                 {`${score.score}`}
               </p>
