@@ -165,6 +165,7 @@
   background: var(--light);
   position: relative;
   transform: scale(0.50);
+  z-index: 100;
 }
 
 .window {
@@ -262,6 +263,7 @@
 .explosion-animation {
   position: absolute;
   animation: explosion-grow 1s;
+  transform: scale(3);
 }
 
 .explosion {
@@ -313,6 +315,7 @@
   right: 200px;
   bottom: 500px;
   animation: explosion-grow1 1s;
+  transform: scale(3);
 }
 
 .explosion1 {
@@ -338,6 +341,7 @@
   right: 30px;
   bottom: 380px;
   animation: explosion-grow2 1s;
+  transform: scale(3);
 }
 
 .explosion2 {
@@ -363,6 +367,7 @@
   right: 500px;
   bottom: 150px;
   animation: explosion-grow2 1s;
+  transform: scale(3);
 }
 
 .explosion3 {
@@ -381,4 +386,39 @@
   100% {
     transform: scale(3);
   }
+}
+
+.star {
+  height: 50px;
+  width: 50px;
+  background-color: #fff;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.animated-cloud-little5 {
+  animation: animateCloudlittle1 5s linear infinite;
+  transform: scale(0.15);
+  margin-left: -100px;
+  position: absolute;
+}
+
+.animated-cloud-little6 {
+  animation: animateCloudlittle4 5s linear infinite;
+  transform: scale(0.15);
+  margin-left: -400px;
+  position: absolute;
+}
+
+.animated-cloud-little7 {
+  animation: animateCloudlittle2 5s linear infinite;
+  transform: scale(0.15);
+  margin-left: -160px;
+  position: absolute;
+}
+
+.animated-cloud-little8 {
+  animation: animateCloudlittle3 5s linear infinite;
+  transform: scale(0.15);
+  margin-left: -500px;
+  position: absolute;
 }

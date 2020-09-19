@@ -19,8 +19,8 @@ export default function QuestionBox(props) {
   const [win, setWin] = useState(false);
   let { questions, changeExplode } = props;
 
-  const { time, start, reset } = useTimer({
-    initialTime: 20,
+  const { time, start, pause, reset } = useTimer({
+    initialTime: 30,
     timerType: "DECREMENTAL",
     endTime: 0,
     onTimeOver: () => {
@@ -32,9 +32,16 @@ export default function QuestionBox(props) {
   ///// GAME LOGIC
 
   const startGame = () => {
+    props.setSkyColor("#eb8643");
+    setContinueGame(true);
+    props.setLose(false);
     setBegin(true);
     nextQuestion(0);
+    props.quickReset();
     props.totalTimeStart();
+    changeExplode(false);
+    setWin(false);
+    props.setGameWon(false);
   };
 
   const nextQuestion = (index) => {
@@ -64,12 +71,18 @@ export default function QuestionBox(props) {
     try {
       answer.toString() === currentQuestion.answer ? nextRound() : failedGame();
     } catch (error) {
-      console.error(error);
       failedGame();
     }
   };
 
   const nextRound = () => {
+    if (currentQuestion.index <= 3) {
+      props.setSkyColor("#7c4622");
+    } else if (currentQuestion.index <= 5) {
+      props.setSkyColor("#361f0f");
+    } else if (currentQuestion.index <= 8) {
+      props.setSkyColor("#160d06");
+    }
     if (currentQuestion.index + 1 === questions.length) {
       playerWon();
     } else {
@@ -80,11 +93,16 @@ export default function QuestionBox(props) {
 
   const failedGame = () => {
     setContinueGame(false);
-    changeExplode();
+    changeExplode(true);
+    props.setLose(true);
+    props.totalTimePause();
   };
 
   const playerWon = () => {
+    props.setGameWon(true);
+    pause();
     props.totalTimePause();
+    props.setSkyColor("#000");
     setWin(true);
   };
 
@@ -109,7 +127,7 @@ export default function QuestionBox(props) {
                 </p>
                 <p className="start-text">
                   <strong>
-                    You have 20 seconds to answer questions, if the time runs
+                    You have 30 seconds to answer questions, if the time runs
                     out or you submit the wrong answer, the ship blows up! No
                     second chances here!
                   </strong>
@@ -154,13 +172,21 @@ export default function QuestionBox(props) {
           )}
           {!continueGame && (
             <>
-              <h1>you lost!</h1>
+              <h1 className="lose-title">You Lost!</h1>
+              <p className="lose-text">Try Again!</p>
+              <Button variant="dark" onClick={startGame} size="lg">
+                Restart
+              </Button>
             </>
           )}
 
           {win && (
             <>
-              <h1>{`You Won, Total Time: ${props.totalTime}`}</h1>
+              <h1 className="win-title">You Won</h1>
+              <p className="win-text">{`Total Time: ${props.totalTime}`}</p>
+              <Button variant="dark" onClick={startGame} size="lg">
+                Play Again
+              </Button>
             </>
           )}
         </div>

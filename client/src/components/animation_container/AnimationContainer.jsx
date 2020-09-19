@@ -1,33 +1,77 @@
 import React from "react";
-import { useState } from "react";
 import "./animation.css";
-import imgPath from "./assets/stars.png";
 
 export default function AnimationContainer(props) {
-  const { explode } = props;
+  const { explode, skyColor, lose, gameWon } = props;
 
   return (
-    <div className="animation-box" style={{ backgroundColor: "#12263a" }}>
-      <div className="animated-cloud-little1">
-        <div className="cloud"></div>
-      </div>
-      <div className="animated-cloud-little2">
-        <div className="cloud"></div>
-      </div>
-      <div className="animated-cloud-little3">
-        <div className="cloud"></div>
-      </div>
-      <div className="animated-cloud-little4">
-        <div className="cloud"></div>
-      </div>
+    <div className="animation-box" style={{ backgroundColor: skyColor }}>
+      {gameWon && (
+        <>
+          <div className="animated-cloud-little5">
+            <div className="star"></div>
+          </div>
+          <div className="animated-cloud-little6">
+            <div className="star"></div>
+          </div>
+          <div className="animated-cloud-little7">
+            <div className="star"></div>
+          </div>
+          <div className="animated-cloud-little8">
+            <div className="star"></div>
+          </div>
+          <div className="animated-cloud-little1">
+            <div className="star"></div>
+          </div>
+          <div className="animated-cloud-little2">
+            <div className="star"></div>
+          </div>
+          <div className="animated-cloud-little3">
+            <div className="star"></div>
+          </div>
+          <div className="animated-cloud-little4">
+            <div className="star"></div>
+          </div>
 
-      <div className="animated-cloud-big1">
-        <div className="cloud"></div>
-      </div>
+          <div className="animated-cloud-little1">
+            <div className="star"></div>
+          </div>
+          <div className="animated-cloud-little2">
+            <div className="star"></div>
+          </div>
+          <div className="animated-cloud-little3">
+            <div className="star"></div>
+          </div>
+          <div className="animated-cloud-little4">
+            <div className="star"></div>
+          </div>
+        </>
+      )}
 
-      <div className="animated-cloud-big2">
-        <div className="cloud"></div>
-      </div>
+      {!lose && !gameWon && (
+        <>
+          <div className="animated-cloud-little1">
+            <div className="cloud"></div>
+          </div>
+          <div className="animated-cloud-little2">
+            <div className="cloud"></div>
+          </div>
+          <div className="animated-cloud-little3">
+            <div className="cloud"></div>
+          </div>
+          <div className="animated-cloud-little4">
+            <div className="cloud"></div>
+          </div>
+
+          <div className="animated-cloud-big1">
+            <div className="cloud"></div>
+          </div>
+
+          <div className="animated-cloud-big2">
+            <div className="cloud"></div>
+          </div>
+        </>
+      )}
 
       <div className="rocket-ship-container">
         <div className="rocket-ship">

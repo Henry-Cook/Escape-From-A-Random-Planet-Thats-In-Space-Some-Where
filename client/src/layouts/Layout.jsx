@@ -20,14 +20,14 @@ export default function Layout(props) {
                 id="basic-navbar-nav"
                 className="justify-content-end"
               >
+                <Nav.Link className="link" href="/">
+                  Play
+                </Nav.Link>
                 <Nav.Link className="link" href="/highscore">
                   High Scores
                 </Nav.Link>
                 <Nav.Link className="link" href="/highscore">
                   Submit Question
-                </Nav.Link>
-                <Nav.Link className="link" href="/highscore">
-                  Settings
                 </Nav.Link>
               </Navbar.Collapse>
             </>
