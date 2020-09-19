@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
-
-import { Route } from "react-router-dom";
+import { verifyUser } from "../../services/auth";
+import { Route, useHistory } from "react-router-dom";
 import Gameplay from "../../screens/game_play/Gameplay";
 import HighScore from "../../components/high_score/HighScore";
 import { fetchQuestions } from "../../services/questions";
@@ -14,8 +14,14 @@ import SubmitQuestion from "../../screens/questions_submit/SubmitQuestion";
 export default function Main() {
   const [questions, setQuestions] = useState(null);
   const [highScores, setHighScores] = useState(null);
+  const [currentUser, setCurrentUser] = useState(null);
+  const history = useHistory();
 
   useEffect(() => {
+    const handleVerify = async () => {
+      const userData = await verifyUser();
+      userData ? setCurrentUser(userData) : history.push("/login");
+    };
     const getAllQuestions = async () => {
       const data = await fetchQuestions();
       setQuestions(data.data);
@@ -24,6 +30,7 @@ export default function Main() {
       const scores = await fetchHighScores();
       setHighScores(scores.data);
     };
+    handleVerify();
     getAllQuestions();
     getHighScores();
   }, []);
@@ -35,7 +42,7 @@ export default function Main() {
   return (
     <>
       <Route path="/" exact>
-        <Gameplay questions={questions} />
+        <Gameplay questions={questions} currentUser={currentUser} />
       </Route>
 
       <Route path="/highscore" exact>

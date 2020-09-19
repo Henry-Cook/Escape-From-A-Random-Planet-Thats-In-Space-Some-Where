@@ -104,6 +104,7 @@ export default function QuestionBox(props) {
     props.totalTimePause();
     props.setSkyColor("#000");
     setWin(true);
+    props.addUserScore();
   };
 
   /////

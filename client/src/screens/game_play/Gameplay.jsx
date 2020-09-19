@@ -3,6 +3,7 @@ import QuestionBox from "../../components/question_box_editor/QuestionBox";
 import { useTimer } from "use-timer";
 import "./gameplay.css";
 import AnimationContainer from "../../components/animation_container/AnimationContainer";
+import { addUsersScores } from "../../services/highscore";
 
 export default function Gameplay(props) {
   const [explode, setExplode] = useState(null);
@@ -17,10 +18,14 @@ export default function Gameplay(props) {
     setColor(color);
   };
 
-  const { questions } = props;
+  const { questions, currentUser } = props;
 
   const changeExplode = (state) => {
     setExplode(state);
+  };
+
+  const addUserScore = async () => {
+    addUsersScores(currentUser.id, time);
   };
 
   return (
@@ -45,6 +50,7 @@ export default function Gameplay(props) {
           setLose={setLose}
           setGameWon={setGameWon}
           quickReset={reset}
+          addUserScore={addUserScore}
         />
       </div>
     </div>

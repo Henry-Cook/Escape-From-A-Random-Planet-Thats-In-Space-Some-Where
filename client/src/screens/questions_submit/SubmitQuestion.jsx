@@ -4,13 +4,26 @@ import "ace-builds/src-noconflict/mode-javascript";
 import "ace-builds/src-noconflict/theme-monokai";
 import { FormControl, Button, Form } from "react-bootstrap";
 import "./submitQuestions.css";
+import { useEffect } from "react";
+import { useHistory } from "react-router-dom";
+import { verifyUser } from "../../services/auth";
 
 export default function SubmitQuestion(props) {
+  const [currentUser, setCurrentUser] = useState(null);
   const [question, setQuestion] = useState({
     question: "let firstStep = 'Delete This'",
     answer: "",
     prompt: "",
   });
+  const history = useHistory();
+
+  useEffect(() => {
+    const handleVerify = async () => {
+      const userData = await verifyUser();
+      userData ? setCurrentUser(userData) : history.push("/login");
+    };
+    handleVerify();
+  }, []);
 
   const handleChange = (e) => {
     let { name, value } = e.target;

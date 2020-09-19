@@ -8,7 +8,7 @@ class TimedScoresController < ApplicationController
   end
 
   def create
-    @timed_score = TimedScore.create(params)
+    @timed_score = TimedScore.create(user_params)
 
     render json: @timed_score
   end
@@ -17,6 +17,12 @@ class TimedScoresController < ApplicationController
     @user_scores = TimedScore.where(user_id: params[:id]).order(:score).limit(5)
   
     render json: @user_scores
+  end
+
+  private 
+
+  def user_params
+    params.require(:timed_score).permit(:user_id, :score)
   end
 
 end
