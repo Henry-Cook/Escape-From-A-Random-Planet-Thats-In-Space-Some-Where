@@ -167,14 +167,15 @@ src
 | Build out CRUD methods in Controllers |    H     |     2 hrs      |    51 mins    |     TBD     |
 | Add user authentication               |    M     |     3 hrs      |    8 Mins     |     TBD     |
 | Add Client Structure                  |    H     |    15 mins     |    3 mins     |     TBD     |
-| Build Layout                          |    L     |     .5 hrs     |    54 mins    |     TBD     |
+| Build Layout                          |    L     |     30 hrs     |    54 mins    |     TBD     |
 | Login/Signup                          |    M     |     2 hrs      |   1:30 hrs    |     TBD     |
 | QuestionBoxEditor                     |    H     |     5 hrs      |   1:08 hrs    |     TBD     |
 | Game Logic                            |    H     |     5 hrs      |   6:16 hrs    |     TBD     |
 | AnimationContainer                    |    H     |     5 hrs      |   4:53 hrs    |     TBD     |
+| Question Submit                       |    H     |     2 hrs      |   1:21 hrs    |     TBD     |
 | Scores                                |    L     |     2 hrs      |     2 hrs     |     TBD     |
 | Styling                               |    L     |     5 hrs      |   1:53 hrs    |     TBD     |
-| TOTAL                                 |          |   30:45 hrs    |      TBD      |     TBD     |
+| TOTAL                                 |          |   33:15 hrs    |      TBD      |     TBD     |
 
 <br>
 

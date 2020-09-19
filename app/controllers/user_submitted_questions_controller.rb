@@ -7,7 +7,7 @@ class UserSubmittedQuestionsController < ApplicationController
   end
 
   def create
-    @question = UserSubmittedQuestion.create(params)
+    @question = UserSubmittedQuestion.create(user_params)
 
     render json: @question
   end
@@ -16,5 +16,11 @@ class UserSubmittedQuestionsController < ApplicationController
     @questions = UserSubmittedQuestion.where(user_id: @user.id)
 
     render json: @questions
+  end
+
+  private
+
+  def user_params
+    params.require(:user_submitted_question).permit(:question, :answer, :prompt)
   end
 end
