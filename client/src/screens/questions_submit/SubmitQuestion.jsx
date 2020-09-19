@@ -29,50 +29,53 @@ export default function SubmitQuestion(props) {
 
   return (
     <div className="submit-container">
-      <h1 className="submit-title">Submit a Question!</h1>
-      <form>
-        <Form.Label className="submit-label">
-          Question Prompt - Witty Sci-Fi Jargon Here ⬇
-        </Form.Label>
-        <FormControl
-          name="prompt"
-          as="textarea"
-          className="text-area"
-          onChange={handleChange}
-        />
-        <Form.Label className="submit-label">Code Here ⬇</Form.Label>
-        <div className="submit-editor">
-          <AceEditor
-            name="question"
-            onChange={handleAceChange}
-            value={question.question}
-            mode="javascript"
-            theme="monokai"
-            name="editor"
-            fontSize={14}
-            height="30vh"
-            width="50vw"
-            showPrintMargin={true}
-            showGutter={true}
-            highlightActiveLine={true}
-            setOptions={{
-              showLineNumbers: true,
-              tabSize: 2,
-              wrap: true,
-            }}
+      <div className="form-styling">
+        <h1 className="submit-title">Submit a Question!</h1>
+        <form>
+          <Form.Label className="submit-label">
+            Question Prompt - Witty Sci-Fi Jargon Here ⬇
+          </Form.Label>
+          <FormControl
+            name="prompt"
+            as="textarea"
+            className="text-area"
+            onChange={handleChange}
           />
-        </div>
-        <Form.Label className="submit-label">Expected Answer ⬇</Form.Label>
-        <FormControl
-          name="answer"
-          onChange={handleChange}
-          as="textarea"
-          className="text-area"
-        />
-        <Button variant="dark" onClick={() => props.submitQuestion(question)}>
-          Submit
-        </Button>
-      </form>
+          <Form.Label className="submit-label">Expected Answer ⬇</Form.Label>
+          <FormControl
+            name="answer"
+            onChange={handleChange}
+            as="textarea"
+            className="text-area"
+          />
+          <Form.Label className="submit-label">Code Here ⬇</Form.Label>
+          <div className="submit-editor">
+            <AceEditor
+              name="question"
+              onChange={handleAceChange}
+              value={question.question}
+              mode="javascript"
+              theme="monokai"
+              name="editor"
+              fontSize={14}
+              height="30vh"
+              width="50vw"
+              showPrintMargin={true}
+              showGutter={true}
+              highlightActiveLine={true}
+              setOptions={{
+                showLineNumbers: true,
+                tabSize: 2,
+                wrap: true,
+              }}
+            />
+          </div>
+
+          <Button variant="dark" onClick={() => props.submitQuestion(question)}>
+            Submit
+          </Button>
+        </form>
+      </div>
     </div>
   );
 }

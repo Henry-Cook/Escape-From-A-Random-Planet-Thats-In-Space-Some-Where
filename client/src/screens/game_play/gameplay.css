@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  background-color: var(--light);
+  height: 90vh;
 }
 
 .animation {

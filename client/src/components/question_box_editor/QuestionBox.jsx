@@ -182,7 +182,7 @@ export default function QuestionBox(props) {
 
           {win && (
             <>
-              <h1 className="win-title">You Won</h1>
+              <h1 className="win-title">You Won!</h1>
               <p className="win-text">{`Total Time: ${props.totalTime}`}</p>
               <Button variant="dark" onClick={startGame} size="lg">
                 Play Again

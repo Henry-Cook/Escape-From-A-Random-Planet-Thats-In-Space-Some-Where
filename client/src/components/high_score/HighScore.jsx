@@ -40,7 +40,13 @@ export default function HighScore(props) {
           {highScores &&
             highScores.map((score, i) => (
               <p className="score" key={score.id}>
-                {`${i + 1} ${score.user.username} : ${score.score}`}
+                {`${
+                  (i === 0 && "🥇") ||
+                  (i === 1 && "🥈") ||
+                  (i === 2 && "🥉") ||
+                  "🏆"
+                }
+                ${score.user.username} : ${score.score}`}
               </p>
             ))}
           <br />
