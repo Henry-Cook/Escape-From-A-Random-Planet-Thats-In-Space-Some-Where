@@ -26,7 +26,7 @@ export default function Layout(props) {
                 <Nav.Link className="link" href="/highscore">
                   High Scores
                 </Nav.Link>
-                <Nav.Link className="link" href="/highscore">
+                <Nav.Link className="link" href="/submitquestion">
                   Submit Question
                 </Nav.Link>
               </Navbar.Collapse>
