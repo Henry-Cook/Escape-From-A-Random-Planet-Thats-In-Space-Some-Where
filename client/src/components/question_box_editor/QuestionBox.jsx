@@ -131,8 +131,6 @@ export default function QuestionBox(props) {
     <>
       <div className="question-box">
         <div className="editor">
-          {!props.questions && <Spinner animation="border" />}
-
           {!begin && (
             <>
               <div className="start-text-container">
@@ -151,9 +149,13 @@ export default function QuestionBox(props) {
                   </strong>
                 </p>
               </div>
-              <Button variant="dark" onClick={startGame} size="lg">
-                Start
-              </Button>
+              {!props.questions ? (
+                <Spinner animation="border" />
+              ) : (
+                <Button variant="dark" onClick={startGame} size="lg">
+                  Start
+                </Button>
+              )}
             </>
           )}
 
