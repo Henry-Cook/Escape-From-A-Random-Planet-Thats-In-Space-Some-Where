@@ -3,11 +3,14 @@ import AceEditor from "react-ace";
 import { Button, Spinner } from "react-bootstrap";
 import "ace-builds/src-noconflict/mode-javascript";
 import "ace-builds/src-noconflict/theme-monokai";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTimer } from "use-timer";
 import "./questionBox.css";
+import { verifyUser } from "../../services/auth";
+import { useHistory } from "react-router-dom";
 
 export default function QuestionBox(props) {
+  let seconds = 45;
   const [begin, setBegin] = useState(null);
   const [currentQuestion, setCurrentQuestion] = useState({
     question: "",
@@ -20,13 +23,22 @@ export default function QuestionBox(props) {
   let { questions, changeExplode } = props;
 
   const { time, start, pause, reset } = useTimer({
-    initialTime: 30,
+    initialTime: seconds,
     timerType: "DECREMENTAL",
     endTime: 0,
     onTimeOver: () => {
       failedGame();
     },
   });
+  const history = useHistory();
+
+  useEffect(() => {
+    const handleVerify = async () => {
+      const userData = await verifyUser();
+      !userData && history.push("/login");
+    };
+    handleVerify();
+  }, []);
 
   ///////////////////////////////////////////
   ///// GAME LOGIC
@@ -67,7 +79,12 @@ export default function QuestionBox(props) {
   };
 
   const testAnswer = () => {
-    let answer = eval(currentQuestion.question);
+    let answer;
+    try {
+      answer = eval(currentQuestion.question);
+    } catch (error) {
+      failedGame();
+    }
     try {
       answer.toString() === currentQuestion.answer ? nextRound() : failedGame();
     } catch (error) {
@@ -76,11 +93,11 @@ export default function QuestionBox(props) {
   };
 
   const nextRound = () => {
-    if (currentQuestion.index <= 3) {
+    if (currentQuestion.index >= 3) {
       props.setSkyColor("#7c4622");
-    } else if (currentQuestion.index <= 5) {
+    } else if (currentQuestion.index >= 5) {
       props.setSkyColor("#361f0f");
-    } else if (currentQuestion.index <= 8) {
+    } else if (currentQuestion.index >= 8) {
       props.setSkyColor("#160d06");
     }
     if (currentQuestion.index + 1 === questions.length) {

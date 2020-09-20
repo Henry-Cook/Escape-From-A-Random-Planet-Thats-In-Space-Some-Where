@@ -12,6 +12,29 @@ TimedScore.destroy_all
 User.destroy_all
 
 
+Question.create!(question: ' let bioContainers = true
+
+  const quantumMemoryBank = () => {
+
+  }
+    
+  quantumMemoryBank()',
+   answer: "cerium phaser turbine", prompt: 'The quantum bio-containers memorybank has been wiped clean! Write a function that returns the string "cerium phaser turbine"(exactly the way it\'s written!) if the bioContainers = true.'
+  )
+  
+
+Question.create!(question: 'const status = "offline";
+
+const berylliumNeogenic = () => {
+  status = "online";
+  return status;
+};
+  
+berylliumNeogenic();',
+ answer: "online", prompt: 'The beryllium neogenic is offline, fix the bug and bring it back online!'
+)
+
+
 Question.create!(question: 'const OsmiumPulseThrusters = () => {  
   let dilithiumVacuum = "stable";  
   let warpNode = "maximum";  
@@ -26,6 +49,30 @@ Question.create!(question: 'const OsmiumPulseThrusters = () => {
     OsmiumPulseThrusters() ;',
  answer: "stabilized", prompt: 'I\'m detecting a destabilization in the osmium pulse thruster. It seems like the function below isn\'t returning what it should! Fix it so we don\'t die!'
 )
+
+Question.create!(question: 'const electroCeramicLandingStruts = (heatLevel) => {
+
+let sheild = "off"
+let strutsMaxHeat = 600
+  
+if (strutsMaxHeat < heatLevel && sheild === "off") {
+  return "Systems Overheated"
+} else {
+  return "All Systems Normal"
+}
+}
+
+electroCeramicLandingStruts(1000)',
+   answer: "All Systems Normal", prompt:  'There\'s a series of nanowave pulse signatures thats overheating the electro-ceramic landing struts! The shielding must have gone down, fix it below!'
+  )
+
+  Question.create!(question: 'const deltaWaveRegulator = () => {
+
+  }
+  
+  deltaWaveRegulator([1342, 3029, 5430, 22034, 9334,])',
+   answer: "5", prompt:  'We need a new fucntion that takes in an array and outputs the length, make sure the input is the correct datastructure! This should help regulate the delta-wave prorulsion unit. Create it, and hurry!'
+  )
 
 
 
@@ -53,24 +100,12 @@ admin = User.create!(username: 'admin', password: '123456')
 
 puts "#{User.count} Users Created"
 
-TimedScore.create!(score: 1, user: admin)
-TimedScore.create!(score: 2, user: admin)
-TimedScore.create!(score: 3, user: admin)
-TimedScore.create!(score: 4, user: admin)
-TimedScore.create!(score: 5, user: admin)
-TimedScore.create!(score: 6, user: admin)
-TimedScore.create!(score: 7, user: admin)
-TimedScore.create!(score: 8, user: admin)
-TimedScore.create!(score: 9, user: admin)
-TimedScore.create!(score: 10, user: admin)
-TimedScore.create!(score: 11, user: admin)
-TimedScore.create!(score: 12, user: admin)
-TimedScore.create!(score: 13, user: admin)
-TimedScore.create!(score: 14, user: admin)
-TimedScore.create!(score: 15, user: admin)
-TimedScore.create!(score: 16, user: admin)
-TimedScore.create!(score: 17, user: admin)
-TimedScore.create!(score: 18, user: admin)
+TimedScore.create!(score: 120, user: admin)
+TimedScore.create!(score: 223, user: admin)
+TimedScore.create!(score: 125, user: admin)
+TimedScore.create!(score: 423, user: admin)
+TimedScore.create!(score: 523, user: admin)
+
 
 
 puts "#{TimedScore.count} Timed Scores Created"

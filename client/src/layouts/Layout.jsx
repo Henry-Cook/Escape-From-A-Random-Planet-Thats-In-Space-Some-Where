@@ -9,7 +9,7 @@ export default function Layout(props) {
   return (
     <>
       <div>
-        <Navbar bg="dark" expand="lg">
+        <Navbar bg="dark" expand="md">
           <Navbar.Brand href="/">
             <h1 className="nav-title">Escape the Global Object</h1>
           </Navbar.Brand>

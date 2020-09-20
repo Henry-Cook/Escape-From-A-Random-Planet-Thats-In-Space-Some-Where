@@ -34,6 +34,74 @@ export default function HighScore(props) {
     handleVerify();
   }, []);
 
+  const displayHighScore = (score, i) => {
+    let hours = Math.floor(score.score / 60);
+    let minutes = score.score - hours * 60;
+    if (hours < 1) {
+      return (
+        <p className="score" key={score.id}>
+          {(i === 0 && "🥇") || (i === 1 && "🥈") || (i === 2 && "🥉") || "🏆"}
+          {score.user.username} : 0{hours}:{minutes}
+        </p>
+      );
+    } else if (minutes < 10 && hours < 10) {
+      return (
+        <p className="score" key={score.id}>
+          {(i === 0 && "🥇") || (i === 1 && "🥈") || (i === 2 && "🥉") || "🏆"}
+          {score.user.username} : 0{hours}:0{minutes}
+        </p>
+      );
+    } else if (minutes > 10 && hours < 10) {
+      return (
+        <p className="score" key={score.id}>
+          {(i === 0 && "🥇") || (i === 1 && "🥈") || (i === 2 && "🥉") || "🏆"}
+          {score.user.username} : 0{hours}:{minutes}
+        </p>
+      );
+    } else {
+      return (
+        <p className="score" key={score.id}>
+          {(i === 0 && "🥇") || (i === 1 && "🥈") || (i === 2 && "🥉") || "🏆"}
+          {score.user.username} : {hours}:{minutes}
+        </p>
+      );
+    }
+  };
+
+  const displayUserScore = (score, i) => {
+    let hours = Math.floor(score.score / 60);
+    let minutes = score.score - hours * 60;
+    if (hours < 1) {
+      return (
+        <p className="score" key={score.id}>
+          {(i === 0 && "🥇") || (i === 1 && "🥈") || (i === 2 && "🥉") || "🏆"}0
+          {hours}:{minutes}
+        </p>
+      );
+    } else if (minutes < 10 && hours < 10) {
+      return (
+        <p className="score" key={score.id}>
+          {(i === 0 && "🥇") || (i === 1 && "🥈") || (i === 2 && "🥉") || "🏆"}0
+          {hours}:0{minutes}
+        </p>
+      );
+    } else if (minutes > 10 && hours < 10) {
+      return (
+        <p className="score" key={score.id}>
+          {(i === 0 && "🥇") || (i === 1 && "🥈") || (i === 2 && "🥉") || "🏆"}0
+          {hours}:{minutes}
+        </p>
+      );
+    } else {
+      return (
+        <p className="score" key={score.id}>
+          {(i === 0 && "🥇") || (i === 1 && "🥈") || (i === 2 && "🥉") || "🏆"}
+          {hours}:{minutes}
+        </p>
+      );
+    }
+  };
+
   return (
     <div className="highscore-div">
       <Card
@@ -46,32 +114,12 @@ export default function HighScore(props) {
           {!highScores && <Spinner animation="border" variant="light" />}
 
           {highScores &&
-            highScores.map((score, i) => (
-              <p className="score" key={score.id}>
-                {`${
-                  (i === 0 && "🥇") ||
-                  (i === 1 && "🥈") ||
-                  (i === 2 && "🥉") ||
-                  "🏆"
-                }
-                ${score.user.username} : ${score.score}`}
-              </p>
-            ))}
+            highScores.map((score, i) => <>{displayHighScore(score, i)}</>)}
           <br />
           <h1 className="highscore-title">Personal High Scores</h1>
           {!userScores && <Spinner animation="border" variant="light" />}
           {userScores &&
-            userScores.map((score, i) => (
-              <p className="score" key={score.id}>
-                {`${
-                  (i === 0 && "🥇") ||
-                  (i === 1 && "🥈") ||
-                  (i === 2 && "🥉") ||
-                  "🏆"
-                }
-                ${score.score}`}
-              </p>
-            ))}
+            userScores.map((score, i) => displayUserScore(score, i))}
         </Card.Body>
       </Card>
     </div>

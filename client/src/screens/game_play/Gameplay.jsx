@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import QuestionBox from "../../components/question_box_editor/QuestionBox";
 import { useTimer } from "use-timer";
 import "./gameplay.css";
+import { useHistory } from "react-router-dom";
 import AnimationContainer from "../../components/animation_container/AnimationContainer";
 import { addUsersScores } from "../../services/highscore";
 
@@ -14,6 +15,8 @@ export default function Gameplay(props) {
     initialTime: 0,
   });
 
+  const history = useHistory();
+
   const setSkyColor = (color) => {
     setColor(color);
   };
@@ -25,7 +28,12 @@ export default function Gameplay(props) {
   };
 
   const addUserScore = async () => {
-    addUsersScores(currentUser.id, time);
+    try {
+      addUsersScores(currentUser.id, time);
+    } catch (error) {
+      console.error(error);
+      history.push("/");
+    }
   };
 
   return (
