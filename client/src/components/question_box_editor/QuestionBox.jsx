@@ -143,7 +143,7 @@ export default function QuestionBox(props) {
                 </p>
                 <p className="start-text">
                   <strong>
-                    You have 30 seconds to answer questions, if the time runs
+                    You have 45 seconds to answer questions, if the time runs
                     out or you submit the wrong answer, the ship blows up! No
                     second chances here!
                   </strong>
@@ -165,7 +165,7 @@ export default function QuestionBox(props) {
                 <p className="question-text">
                   <strong>{currentQuestion.prompt}</strong>
                 </p>
-                <h3>{`Time Left: ${time} Seconds`}</h3>
+                <h3 className="timer">{`Time Left: ${time} Seconds`}</h3>
               </div>
               <AceEditor
                 mode="javascript"
@@ -174,7 +174,7 @@ export default function QuestionBox(props) {
                 theme="monokai"
                 name="editor"
                 fontSize={14}
-                height="50%"
+                height="80%"
                 width="90%"
                 showPrintMargin={true}
                 showGutter={true}

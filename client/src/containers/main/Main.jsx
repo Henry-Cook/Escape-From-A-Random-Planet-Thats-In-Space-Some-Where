@@ -7,7 +7,7 @@ import Gameplay from "../../screens/game_play/Gameplay";
 import HighScore from "../../components/high_score/HighScore";
 import { fetchQuestions } from "../../services/questions";
 import { fetchHighScores } from "../../services/highscore";
-import { addQuestion } from "../../services/submitQustion";
+import { addQuestion, destroyQuestion } from "../../services/submitQustion";
 import "./main.css";
 import SubmitQuestion from "../../screens/questions_submit/SubmitQuestion";
 
@@ -15,6 +15,7 @@ export default function Main() {
   const [questions, setQuestions] = useState(null);
   const [highScores, setHighScores] = useState(null);
   const [currentUser, setCurrentUser] = useState(null);
+  const [submittedQuestion, setSubmittedQuestion] = useState(null);
   const history = useHistory();
 
   useEffect(() => {
@@ -37,6 +38,12 @@ export default function Main() {
 
   const submitQuestion = async (body) => {
     const response = await addQuestion(body);
+    setSubmittedQuestion(response);
+  };
+
+  const deleteQuestion = async () => {
+    const response = await destroyQuestion(submittedQuestion.id);
+    setSubmittedQuestion(null);
   };
 
   return (
@@ -50,7 +57,12 @@ export default function Main() {
       </Route>
 
       <Route path="/submitquestion" exact>
-        <SubmitQuestion submitQuestion={submitQuestion} />
+        <SubmitQuestion
+          submitQuestion={submitQuestion}
+          currentUser={currentUser}
+          submittedQuestion={submittedQuestion}
+          deleteQuestion={deleteQuestion}
+        />
       </Route>
     </>
   );

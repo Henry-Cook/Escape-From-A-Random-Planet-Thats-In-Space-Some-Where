@@ -28,3 +28,16 @@
   font-weight: 600;
   font-size: 20px;
 }
+
+@media screen and (max-width: 650px) {
+  .submit-title {
+    font-size: 5vw;
+  }
+  .submit-label {
+    font-weight: 600;
+    font-size: 3vw;
+  }
+  .text-area {
+    width: 80vw;
+  }
+}

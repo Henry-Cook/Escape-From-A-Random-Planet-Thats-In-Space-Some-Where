@@ -44,6 +44,7 @@ export default function Login(props) {
                 placeholder="Password"
                 type="password"
                 name="password"
+                minlength="6"
               />
               <Button
                 className="btn"

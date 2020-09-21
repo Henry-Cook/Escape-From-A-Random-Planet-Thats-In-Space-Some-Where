@@ -63,3 +63,30 @@
 .win-text {
   font-size: 4vw;
 }
+
+@media screen and (max-width: 900px) {
+  .start-text {
+    font-size: 2.5vw;
+  }
+  .editor {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .question-text {
+    font-size: 2vw;
+  }
+  .timer {
+    font-size: 2.5vw;
+  }
+  .question-box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}

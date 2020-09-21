@@ -106,7 +106,7 @@ export default function HighScore(props) {
     <div className="highscore-div">
       <Card
         className="score-card"
-        style={{ width: "60vw", background: "#12263a" }}
+        style={{ width: "70vw", background: "#12263a" }}
       >
         <Card.Body>
           <h1 className="highscore-title">High Scores</h1>

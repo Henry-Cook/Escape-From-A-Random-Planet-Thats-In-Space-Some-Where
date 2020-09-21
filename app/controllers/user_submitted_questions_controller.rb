@@ -18,9 +18,14 @@ class UserSubmittedQuestionsController < ApplicationController
     render json: @questions
   end
 
+  def destroy
+    @question = UserSubmittedQuestion.find(params[:id])
+    @deleted_question = @question.destroy
+  end
+
   private
 
   def user_params
-    params.require(:user_submitted_question).permit(:question, :answer, :prompt)
+    params.require(:user_submitted_question).permit(:question, :answer, :prompt, :user_id)
   end
 end

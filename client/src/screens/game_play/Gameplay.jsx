@@ -36,6 +36,10 @@ export default function Gameplay(props) {
     }
   };
 
+  // if (window.innerWidth < 900) {
+
+  // };
+
   return (
     <div className="gameplay">
       <div className="animation">
