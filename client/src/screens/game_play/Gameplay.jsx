@@ -27,9 +27,9 @@ export default function Gameplay(props) {
     setExplode(state);
   };
 
-  const addUserScore = async () => {
+  const addUserScore = async (user) => {
     try {
-      addUsersScores(currentUser.id, time);
+      addUsersScores(user.id, time);
     } catch (error) {
       console.error(error);
       history.push("/");

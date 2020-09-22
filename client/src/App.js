@@ -26,8 +26,13 @@ function App() {
   }, []);
 
   const loginSubmit = async (loginData) => {
-    const userData = await loginUser(loginData);
-    setCurrentUser(userData);
+    try {
+      const userData = await loginUser(loginData);
+      setCurrentUser(userData);
+    } catch (error) {
+      alert("Incorrect Username or Password");
+    }
+
     history.push("/");
   };
 

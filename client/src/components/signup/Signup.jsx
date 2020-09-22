@@ -19,9 +19,7 @@ export default function Login(props) {
   return (
     <>
       <div className="login-div">
-        <Card
-          style={{ width: "30rem", height: "25rem", background: "#12263a" }}
-        >
+        <Card style={{ width: "50vw", height: "40vh", background: "#12263a" }}>
           <Card.Body>
             <h1 className="login-title">Signup</h1>
             <form

@@ -10,6 +10,7 @@ import { verifyUser } from "../../services/auth";
 import { useHistory } from "react-router-dom";
 
 export default function QuestionBox(props) {
+  const [currentUser, setCurrentUser] = useState(null);
   let seconds = 45;
   const [begin, setBegin] = useState(null);
   const [currentQuestion, setCurrentQuestion] = useState({
@@ -36,6 +37,7 @@ export default function QuestionBox(props) {
     const handleVerify = async () => {
       const userData = await verifyUser();
       !userData && history.push("/login");
+      setCurrentUser(userData);
     };
     handleVerify();
   }, []);
@@ -79,6 +81,7 @@ export default function QuestionBox(props) {
   };
 
   const testAnswer = () => {
+    console.log(eval(currentQuestion.question));
     let answer;
     try {
       answer = eval(currentQuestion.question);
@@ -93,11 +96,11 @@ export default function QuestionBox(props) {
   };
 
   const nextRound = () => {
-    if (currentQuestion.index >= 3) {
+    if (currentQuestion.index >= 2) {
       props.setSkyColor("#7c4622");
-    } else if (currentQuestion.index >= 5) {
+    } else if (currentQuestion.index >= 4) {
       props.setSkyColor("#361f0f");
-    } else if (currentQuestion.index >= 8) {
+    } else if (currentQuestion.index >= 6) {
       props.setSkyColor("#160d06");
     }
     if (currentQuestion.index + 1 === questions.length) {
@@ -121,7 +124,7 @@ export default function QuestionBox(props) {
     props.totalTimePause();
     props.setSkyColor("#000");
     setWin(true);
-    props.addUserScore();
+    props.addUserScore(currentUser);
   };
 
   /////

@@ -25,6 +25,12 @@
   text-align: center;
 }
 
+.card-sizing {
+  width: "80vw";
+  height: "40vh";
+}
+
 .login-input {
   margin-top: 20px;
+  text-align: center;
 }
