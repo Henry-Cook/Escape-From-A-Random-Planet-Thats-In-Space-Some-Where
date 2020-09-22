@@ -4,14 +4,8 @@ import Main from "./containers/main/Main";
 import Signup from "./components/signup/Signup";
 import Login from "./components/login/Login";
 import { Route, useHistory } from "react-router-dom";
-import {
-  loginUser,
-  registerUser,
-  verifyUser,
-  removeToken,
-} from "./services/auth";
+import { loginUser, registerUser, verifyUser } from "./services/auth";
 import Layout from "./layouts/Layout";
-import Switch from "react-bootstrap/esm/Switch";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -37,9 +31,13 @@ function App() {
   };
 
   const registerSubmit = async (registerData) => {
-    const userData = await registerUser(registerData);
-    setCurrentUser(userData);
-    history.push("/");
+    try {
+      const userData = await registerUser(registerData);
+      setCurrentUser(userData);
+      history.push("/");
+    } catch (error) {
+      alert("Username Already in Use");
+    }
   };
 
   return (

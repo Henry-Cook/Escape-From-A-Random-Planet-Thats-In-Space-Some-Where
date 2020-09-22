@@ -11,7 +11,7 @@ export default function Gameplay(props) {
   const [skyColor, setColor] = useState("#12263a");
   const [lose, setLose] = useState(null);
   const [gameWon, setGameWon] = useState(null);
-  const { time, start, pause, reset, isRunning } = useTimer({
+  const { time, start, pause, reset } = useTimer({
     initialTime: 0,
   });
 
@@ -21,7 +21,7 @@ export default function Gameplay(props) {
     setColor(color);
   };
 
-  const { questions, currentUser } = props;
+  const { questions } = props;
 
   const changeExplode = (state) => {
     setExplode(state);
