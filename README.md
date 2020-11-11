@@ -178,7 +178,7 @@ src
 
 <br>
 
-## ERD Model
+## Entity Relationship Diagram(ERD)
 
 <p align="center">
 <img src="https://github.com/Henry-Cook/Escape-The-Global-Object/blob/master/readme-assets/Screen%20Shot%202020-09-15%20at%2012.22.14%20PM.png?raw=true"/>
