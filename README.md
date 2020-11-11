@@ -160,21 +160,21 @@ src
 
 ## Time Estimates
 
-| Task                                  | Priority | Estimated Time | Time Invested | Actual Time |
-| ------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Create Models, Controllers, Routes    |    H     |     1 hrs      |    47 Mins    |     TBD     |
-| Build out CRUD methods in Controllers |    H     |     2 hrs      |    51 mins    |     TBD     |
-| Add user authentication               |    M     |     3 hrs      |    8 Mins     |     TBD     |
-| Add Client Structure                  |    H     |    15 mins     |    3 mins     |     TBD     |
-| Build Layout                          |    L     |     30 hrs     |    54 mins    |     TBD     |
-| Login/Signup                          |    M     |     2 hrs      |   1:30 hrs    |     TBD     |
-| QuestionBoxEditor                     |    H     |     5 hrs      |   2:18 hrs    |     TBD     |
-| Game Logic                            |    H     |     5 hrs      |   6:16 hrs    |     TBD     |
-| AnimationContainer                    |    H     |     5 hrs      |   4:53 hrs    |     TBD     |
-| Question Submit                       |    H     |     2 hrs      |   1:21 hrs    |     TBD     |
-| Scores                                |    L     |     2 hrs      |   2:09 hrs    |     TBD     |
-| Styling                               |    L     |     5 hrs      |   1:53 hrs    |     TBD     |
-| TOTAL                                 |          |   33:15 hrs    |      TBD      |     TBD     |
+| Task                                  | Priority | Estimated Time | Time Invested |
+| ------------------------------------- | :------: | :------------: | :-----------: |
+| Create Models, Controllers, Routes    |    H     |     1 hrs      |    47 Mins    |
+| Build out CRUD methods in Controllers |    H     |     2 hrs      |    51 mins    |
+| Add user authentication               |    M     |     3 hrs      |    8 Mins     |
+| Add Client Structure                  |    H     |    15 mins     |    3 mins     |
+| Build Layout                          |    L     |     30 hrs     |    54 mins    |
+| Login/Signup                          |    M     |     2 hrs      |   1:30 hrs    |
+| QuestionBoxEditor                     |    H     |     5 hrs      |   2:18 hrs    |
+| Game Logic                            |    H     |     5 hrs      |   6:16 hrs    |
+| AnimationContainer                    |    H     |     5 hrs      |   4:53 hrs    |
+| Question Submit                       |    H     |     2 hrs      |   1:21 hrs    |
+| Scores                                |    L     |     2 hrs      |   2:09 hrs    |
+| Styling                               |    L     |     5 hrs      |   1:53 hrs    |
+| TOTAL                                 |          |   33:15 hrs    |      24:03 hrs      |
 
 <br>
 
