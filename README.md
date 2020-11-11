@@ -204,4 +204,4 @@ src
 
 ## Change Log / Issues
 
-> TBD
+- Animation box planned to use canvas, now uses just regular css + keyframes.
